@@ -1,0 +1,120 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+
+}
+
+.foodHeading{
+    color:#3F3F3F;
+    
+    font-size: 28px;
+    /* line-height: 1.2; */
+    font-weight: 500;
+    margin-bottom: 2%;
+}
+
+#firstFoodCrousel{
+    padding: 0% 10%;
+    background-color: #F8F8F8;
+}
+#secondFoodCrousel{
+    margin: auto;
+    margin-top: 3%;
+    padding: 0% 10%;
+    /* background-color: #F8F8F8; */
+}
+
+
+.carousel-cell  img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.carousel-cell p{
+    text-align: center;
+    color: #834040;
+    font-weight: 600;
+    margin: auto;
+    margin-top: 5%;
+}
+.carousel-cell{
+    margin: 1%;
+    cursor: pointer;
+}
+
+#secondFoodCrousel  img{
+    /* border-radius: ; */
+    /* width: fit-content; */
+    /* height: fit-content; */
+    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* border: 1px solid black; */
+}
+
+
+.flickity-button {
+    background: white;
+  }
+  /* big previous & next buttons */
+  .flickity-prev-next-button {
+    width: 30px;
+    height: 30px;
+  }
+  /* icon color */
+  .flickity-button-icon {
+    fill: white;
+  }
+
+
+  .flickity-button-icon {
+    fill: black;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ResponsiveNess */
+
+
+@media screen and (max-width:900px) {
+    #firstFoodCrousel{
+        padding: 0% 5%;
+        
+    }
+    #secondFoodCrousel{
+        padding: 0% 5%;
+        
+    }
+}
