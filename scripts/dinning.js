@@ -4,10 +4,10 @@ import {navbar,selectionNavbar } from "../components/navbar.js";
 document.getElementById("foodNavbar").innerHTML=navbar();
 
 document.getElementById("selectionNavbar").innerHTML=selectionNavbar();
-document.getElementById("selectionDiv1").style.color="#F05665";
-document.getElementById("selectionDiv1").style.borderBottom="2px solid #F05665";
-document.getElementById("selectionImg1").src="https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png";
-document.getElementById("selectionContainer1").style.backgroundColor="#FCEEC0";
+document.getElementById("selectionDiv2").style.color="#F05665";
+document.getElementById("selectionDiv2").style.borderBottom="2px solid #F05665";
+// document.getElementById("selectionImg1").src="https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png";
+document.getElementById("selectionContainer2").style.backgroundColor="#FCEEC0";
 
 
 
@@ -37,22 +37,20 @@ const appendData =(data,location)=>{
         let subHeadDEle3= document.createElement("p");
         let subHeadDEle4= document.createElement("p");
         let headDiv2 = document.createElement("div");
-        let subHeadDEle5 =document.createElement("img");
+        let subHeadDEle5 =document.createElement("p");
         let subHeadDEle6 =document.createElement("p");
         let addToCartDiv = document.createElement("div");
         let time = document.createElement("p");
         addToCartDiv.innerHTML=`<i class="fa-solid fa-cart-shopping"></i> Add To Cart`;
         addToCartDiv.setAttribute("class","addToCart");
-        addToCartDiv.addEventListener("click",()=>{
-            addToCart(ele)
-        });
+        addToCartDiv.addEventListener("click",addToCart);
         img.src=ele.img;
         img.setAttribute("class","width100")
-        time.innerText=ele.time;
+        time.innerText=ele.distance;
         time.setAttribute("class","foodTime")
 
         
-        subHeadDEle1.innerText=`${ele.food}  ${ele.place}`
+        subHeadDEle1.innerText=`${ele.name}`
         subHeadDEle1.setAttribute("class","tagsFood2")
         subHeadDEle2.innerHTML=`${ele.rating} <i class="fa-solid fa-star starLogo"></i>`
         subHeadDEle2.setAttribute("class","foodRating")
@@ -64,19 +62,14 @@ const appendData =(data,location)=>{
         
         
 
-        subHeadDEle5.src=ele.logo;
-        subHeadDEle6.innerText=ele.status;
+        subHeadDEle5.innerText=ele.address;
+        subHeadDEle6.innerText=ele.timing;
+        subHeadDEle6.setAttribute("class","timingPTag");
         headDiv2.append(subHeadDEle5,subHeadDEle6);
         headDiv2.setAttribute("class","containerHeadDiv2");
 
 
-        mainDiv.append(addToCartDiv,img,time,headDiv1,headDiv2);
-        mainDiv.addEventListener("mouseover",()=>{
-            addToCartDiv.style.display="block";
-        })
-        mainDiv.addEventListener("mouseout",()=>{
-            addToCartDiv.style.display="none";
-        })
+        mainDiv.append(img,time,headDiv1,headDiv2);
         location.append(mainDiv);
 
 
@@ -145,7 +138,7 @@ const fetchDataSupportSort =async(url,ascending)=>{
 
 
 
-const url =`https://zomatoclone-api.herokuapp.com/posts?`;
+const url =`https://zomatoclone-api.herokuapp.com/restaurant?`;
 
 let searchFood = localStorage.getItem("foodItem") || true;
 
@@ -162,12 +155,7 @@ else{
 
 
 
-let addToCart=(ele)=>{
-    let cartProducts = JSON.parse(localStorage.getItem("cartProducts"))||[];
-    cartProducts.push(ele);
-
-    localStorage.setItem("")
-    
+let addToCart=()=>{
     let alert = document.getElementById("alert");
     alert.style.color="white";
     alert.style.backgroundColor="green";
@@ -214,7 +202,7 @@ function userDropDown(){
 
 const ratingFilter =()=>{
     let button = document.getElementById("ratingH2L");
-    const url =`https://zomatoclone-api.herokuapp.com/posts?`;
+    const url =`https://zomatoclone-api.herokuapp.com/restaurant?`;
     document.getElementById("deliveryH2L").style.backgroundColor="white"
     document.getElementById("deliveryH2L").style.color="#bba3a3"
     document.getElementById("multipleFilters").style.backgroundColor="white";
@@ -257,7 +245,7 @@ const ratingFilter =()=>{
 }
 const deliveryFilter =()=>{
     let button = document.getElementById("deliveryH2L");
-    const url =`https://zomatoclone-api.herokuapp.com/posts?`;
+    const url =`https://zomatoclone-api.herokuapp.com/restaurant?`;
     document.getElementById("ratingH2L").style.backgroundColor="white"
     document.getElementById("ratingH2L").style.color="#bba3a3"
     document.getElementById("multipleFilters").style.backgroundColor="white";
@@ -307,11 +295,11 @@ const searchFoodSection =(e)=>{
 
     if(e.key=="Enter"){
         let value = document.getElementById("search").value;
-
         localStorage.setItem("foodItem",value);
-        const url =`https://zomatoclone-api.herokuapp.com/posts?`;
+        const url =`https://zomatoclone-api.herokuapp.com/restaurant?`;
         
-        fetchDataSupport(url+`q=${value}&_page=1&_limit=20`);
+        // fetchDataSupport(url+`q=${value}&_page=1&_limit=20`);
+        location.href="food.html";
 
 
 
@@ -475,7 +463,7 @@ function moreFilters(){
                 
             }, 1500);
 
-            const url =`https://zomatoclone-api.herokuapp.com/posts?`;
+            const url =`https://zomatoclone-api.herokuapp.com/restaurant?`;
             let searchFood = localStorage.getItem("foodItem") || "Pizza";
             console.log(para1+" "+para2);
             fetchDataSupportSort(url+`q=${searchFood}&_page=1&_limit=20&_sort=`+para1,para2);
@@ -497,6 +485,7 @@ function moreFilters(){
     header_1.addEventListener("click",()=>{
         let arr= document.querySelector("html").children
         arr[arr.length-1].remove();
+
         document.querySelector("html").style.overflow="auto"
     })
 
