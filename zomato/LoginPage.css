@@ -1,0 +1,116 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#login-id{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(52, 50, 50);
+    width: 28%;
+    /* text-align: center; */
+    border-radius: 2%;
+    padding: 2%;
+}
+.login-button:last-child{
+    background-color: rgb(239,79,95);
+    color: whitesmoke;
+}
+.login-heading{
+    margin-top: -2%;
+}
+#input-number{
+    width: 98%;
+    height: 5vh;
+}
+#input-number::-webkit-outer-spin-button,
+#input-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  
+}
+#input-number[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.login-button{
+    width: 100%;
+    margin-top: 5%;
+    height: 6vh;
+    padding: 2px;
+    font-size: large;
+    font-weight: lighter;
+    color: rgba(63, 61, 61, 0.833);
+    cursor: pointer;
+    /* margin: 20px; */
+    border-radius: 5px;
+    border: 0ch;
+}
+#mail-icon{    
+    width: 30px; 
+    
+}
+
+/* or */
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.strike > span {
+    position: relative;
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.strike > span:before,
+.strike > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    margin-top: 2px;
+    background-color: rgba(72, 72, 72, 0.613);
+
+}
+
+.strike > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+/* second div */
+
+.inside-button{
+    display: flex;
+    height: 6vh;
+    width: inherit;
+    margin-top: -0.8%;
+    /* grid-template-columns: repeat(2,1fr); */
+    flex-direction: row;
+    column-gap: -25%;
+    
+    /* border: 1px solid blue; */
+    justify-content: center;
+}
+
+.inside-button > p{
+    margin-top: 3%;
+    text-align: center;
+}
+.inside-button > .img{
+    margin-top: 1%;
+    margin-right: 10px;
+}
+.login-container p a{
+    text-decoration: none;
+    color: rgb(239,79,95);
+}
