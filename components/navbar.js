@@ -8,8 +8,16 @@ const navbar = ()=>{
         <div id="dropdownSelect">
             <input type="text" name="" id="searchLocation" placeholder="Your Location">
         </div>
-        <i class="fa-solid fa-caret-down"></i>
-        
+        <i id="dropShowLocations"class="fa-solid fa-caret-down"></i>
+        <div id="showLocations">
+            <div id= "detectLocation">
+            <i class="fa-solid fa-location-dot"></i>
+            Detect My Location
+            </div>
+            <div id="locationSuggestions">
+
+            </div>
+        </div>
        </div> 
        <div id="searchNavbar">
         <i class="fa-solid fa-magnifying-glass"></i>
@@ -32,23 +40,23 @@ const navbar = ()=>{
 </nav>
 <div id="responsiveBar">
 <div id="locationAndSearch">
-    <div id="location">
-     <i class="fa-solid fa-location-dot"></i>
-     <div id="dropdownSelect">
-         <p>Select Below</p>
-     </div>
-     <i class="fa-solid fa-caret-down"></i>
-     <div id="dropList">
-         <p class="listOptions">Delhi</p>
-         <p class="listOptions">Banglore</p>
-         <p class="listOptions">Chennai</p>
-         <p class="listOptions">Mumbai</p>
-     </div>
-    </div> 
-    <div id="searchNavbar">
-     <i class="fa-solid fa-magnifying-glass"></i>
-     <input type="search" name="" id="search" placeholder="Search for Restaurant">
- </div>
+       <div id="location">
+        <i class="fa-solid fa-location-dot"></i>
+        <div id="dropdownSelect">
+            <input type="text" name="" id="searchLocation" placeholder="Your Location">
+        </div>
+        <i id="dropShowLocations"class="fa-solid fa-caret-down"></i>
+        <div id="showLocations">
+            <div id= "detectLocation">
+            <i class="fa-solid fa-location-dot"></i>
+            Detect My Location
+            </div>
+        </div>
+       </div> 
+       <div id="searchNavbar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" name="" id="search" placeholder="Search for Restaurant">
+    </div>
 </div>
 </div>`
 }
@@ -84,3 +92,4 @@ const selectionNavbar=()=>{
 
 
 export {navbar ,selectionNavbar};
+

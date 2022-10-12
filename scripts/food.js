@@ -77,6 +77,10 @@ const appendData =(data,location)=>{
         mainDiv.addEventListener("mouseout",()=>{
             addToCartDiv.style.display="none";
         })
+        mainDiv.addEventListener("click",()=>{
+            localStorage.setItem("foodShow",JSON.stringify(ele));
+            window.location.href="foodDescription.html";
+        })
         location.append(mainDiv);
 
 
@@ -147,32 +151,54 @@ const fetchDataSupportSort =async(url,ascending)=>{
 
 const url =`https://zomatoclone-api.herokuapp.com/posts?`;
 
-let searchFood = localStorage.getItem("foodItem") || true;
+let searchFood = localStorage.getItem("foodItem") || "Pizza";
+fetchDataSupport(url+`q=${searchFood}&_page=1&_limit=20`);
 
-if(searchFood){
-    
-    fetchDataSupport(url+`_page=1&_limit=20&_sort=rating&_order=asc`);
-    
-}
-else{
-    fetchDataSupport(url+`q=${searchFood}&_page=1&_limit=20`);
-}
 
 
 
 
 
 let addToCart=(ele)=>{
+    event.stopImmediatePropagation();
     let cartProducts = JSON.parse(localStorage.getItem("cartProducts"))||[];
-    cartProducts.push(ele);
 
-    localStorage.setItem("")
+    let boolean = false;
+
+    for(let i=0;i<cartProducts.length;i++){
+
+        if(ele.id==cartProducts[i].id){
+            boolean=true;
+            break;
+        }
+
+
+    }
     
     let alert = document.getElementById("alert");
-    alert.style.color="white";
-    alert.style.backgroundColor="green";
-    alert.style.border="1px solid green";
-    alert.innerHTML=`Item Added To Cart <i class="fa-sharp fa-solid fa-circle-check"></i>`;
+    if(!boolean){
+        cartProducts.push(ele);
+        localStorage.setItem("cartProducts",JSON.stringify(cartProducts));
+        alert.style.color="white";
+        alert.style.backgroundColor="green";
+        alert.style.border="1px solid green";
+        alert.innerHTML=`Item Added To Cart <i class="fa-sharp fa-solid fa-circle-check"></i>`;
+        
+    }
+    else{
+        alert.style.color="white";
+        alert.style.backgroundColor="rgb(224, 53, 70)";
+        alert.style.border="1px solid rgb(224, 53, 70)";
+        alert.innerHTML=`Already in Cart <i class="fa-solid fa-xmark"></i>`;
+        
+
+    }
+    
+
+    
+
+    
+    
     alert.style.display="block";
     setTimeout(() => {
         alert.style.display="none";
@@ -528,3 +554,172 @@ document.getElementById("search").addEventListener("keypress",searchFoodSection)
 // }
 
 // fetchCity();
+
+
+
+//Search Functionality
+setTimeout(() => {
+    
+    document.getElementById("searchLocation").addEventListener("input",debounce(locationSearch,1000));
+}, 100);
+const locationSearch = async()=>{
+
+
+    const apiKey= `7-FIYtpdWoxB9jL9CRdKwtPhuVtGvEwFx2o2FffIYcU`;
+    let cityValue= document.getElementById("searchLocation").value;
+
+    if(cityValue!=""){
+        ///Her
+        document.getElementById("showLocations").style.display="block"
+        const url =`https://autosuggest.search.hereapi.com/v1/autosuggest?at=52.93175,12.77165&q=${cityValue}&administrativeAreaType=state&limit=2&lang=en&apiKey=${apiKey}`
+        let res = await fetch(url);
+        let data = await res.json();
+        // console.log(data);
+
+        let appendDIv = document.getElementById("locationSuggestions");
+        appendDIv.innerHTML="";
+        data.items.map((ele)=>{
+            let arr = ele.title.split(", ");
+            let title ="";
+            if(arr.length>2){
+                title = arr[0]+" "+arr[1];
+                if(title.length>10){
+                    title=arr[0]
+                    
+                } 
+            }
+            else{
+                title=arr[0];
+            }
+            let div = document.createElement("div");
+            div.innerHTML=`<i class="fa-solid fa-location-dot"></i>
+            ${title}`
+
+            appendDIv.append(div);
+            div.addEventListener("click",()=>{
+                setLocationNameFunc(title,true);
+            })
+
+
+        })
+        
+    }
+
+
+
+}
+
+let debounce = (cb,time)=>{
+
+    let timerId;
+    return ()=>{
+        if(timerId)clearTimeout(timerId);
+        timerId=setTimeout(() => {
+            cb();
+        }, time);
+    }
+
+
+
+
+
+}
+
+
+//show Location
+
+setTimeout(() => {
+    
+    document.getElementById("dropShowLocations").addEventListener("click",showLocations)
+    document.getElementById("detectLocation").addEventListener("click",detectLocationSelf);
+
+}, 100);
+
+
+const showLocations=()=>{
+    let selectdiv = document.getElementById("showLocations");
+    document.getElementById("locationSuggestions").innerHTML="";
+    if(selectdiv.style.display=="none"){
+
+        selectdiv.style.display="block"
+        
+        
+    }
+    else{
+        selectdiv.style.display="none"
+
+    }
+}
+
+const detectLocationSelf =()=>{
+    let city ="";
+    const options = {
+        enableHighAccuracy: true,
+        timeout: 5000,
+        maximumAge: 0
+      };
+      
+      async function success(pos) {
+        const crd = pos.coords;
+        const apiKey=`8ee524530c82ab7b4867bdd1aa5045fe`;
+        const url =`https://api.openweathermap.org/data/2.5/weather?lat=${crd.latitude}&lon=${crd.longitude}&appid=${apiKey}`
+        let res = await fetch(url);
+        let data = await res.json();
+        console.log(data);
+        city=data.name;
+        setLocationNameFunc(city,true);
+        
+        
+      }
+      
+      function error(err) {
+        console.warn(`ERROR(${err.code}): ${err.message}`);
+      }
+      
+      navigator.geolocation.getCurrentPosition(success, error, options);
+      
+}
+
+
+const setLocationNameFunc=(name,boolean)=>{
+    document.getElementById("searchLocation").value=name;
+    document.getElementById("cityName1").innerText=name;
+    document.getElementById("cityName2").innerText=name;
+    // document.getElementById("cityName3").innerText=name;
+    // document.getElementById("cityName4").innerText=name;
+    // document.getElementById("cityName3").innerText=name;
+    // document.getElementById("cityName4").innerText=name;
+
+
+    let selectdiv = document.getElementById("showLocations");
+      selectdiv.style.display="none"
+
+
+      if(boolean){
+
+          
+          let alert = document.getElementById("alert");
+          alert.style.color="white";
+          alert.style.backgroundColor="green";
+          alert.style.border="1px solid green";
+          alert.innerHTML=`${name} Selected <i class="fa-sharp fa-solid fa-circle-check"></i>`;
+      alert.style.display="block";
+      setTimeout(() => {
+          alert.style.display="none";
+          
+        }, 1500);
+    }
+        
+    localStorage.setItem("searchedCity",name);
+}
+
+
+// Searched Cities
+
+
+let searchedCity = localStorage.getItem("searchedCity")||"";
+
+
+if(searchedCity!=""){
+    setLocationNameFunc(searchedCity,false);
+}
