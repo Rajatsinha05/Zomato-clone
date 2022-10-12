@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./zomato.jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <title>Zomato</title>
+</head>
+
+<body>
+    <!-- Header Setion -->
+    <header>
+        <div class="navBar">
+            <div>
+                <h4>Get the App</h4>
+            </div>
+            <ul class="rightFloat">
+                <li>Investor Relations</li>
+                <li>Add Restaurant</li>
+                <li>Log in</li>
+                <li>Sign up</li>
+            </ul>
+        </div>
+
+        <div class="head">
+            <img class="logo" src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" alt="ZomatoLogo">
+            <h3>Discover the Best food & drinks in Hyderabad</h3>
+            <div class="search">
+                <div class="search_item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p style="margin-left: 1.3rem;">Hyderabad</p>
+
+                    </label>
+                </div>
+                <div class="search_item">
+                    <i id="search" class="fas fa-search"></i>
+                    <input type="text" class="searchData" placeholder="Search for restaurents, cuisin or a dish" value="">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="headerImage">
+            <img src="https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png" alt="headerImage">
+        </div>
+
+    </header>
+    <!-- Section 1 -->
+    <section class="section_1">
+        <div class="section_1_item">
+            <div class="item-details">
+                <p style="font-size: 25px; font-weight: bold; color: rgb(70, 67, 67); margin-top: 5px; margin-bottom: -5px;">Order online</p>
+                <p>Stay home and order to your doorstep</p>
+            </div>
+
+            <img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt="orderonline">
+        </div>
+        </div>
+        <div class="section_1_item">
+            <div class="item-details">
+                <p style="font-size: 25px; font-weight: bold; color: rgb(70, 67, 67); margin-top: 5px; margin-bottom: -5px;">Dining</p>
+
+                <p style="font-weight: 300; color:rgb(70, 67, 67);  font-family: Okra, Helvetica, sans-serif;">View the city's favourite dining venues</p>
+
+
+            </div>
+            <img src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt="dining">
+
+
+        </div>
+        <div class="section_1_item">
+            <div class="item-details">
+                <p style="font-size: 25px; font-weight: bold; color: rgb(70, 67, 67); margin-top: 5px; margin-bottom: -5px;">Nightlife and clubs</p>
+                <p style="font-weight: 300; color:rgb(70, 67, 67)">Explore the city's top nightlife</p>
+            </div>
+            <img src="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt="Nightlife and clubs">
+
+        </div>
+        </div>
+    </section>
+    <!-- middle section(section 2) -->
+    <section class="center_section">
+        <div class="section_2">
+            <h2>Collections</h2>
+            <div id="gap">
+                <h6>Explore curated lists of top restaurants, cafes, pubs, and bars in Hyderabad, based on trends</h6>
+                <span>All collections in Hyderabad &nbsp; <i class="fas fa-caret-right"></i></span>
+            </div>
+        </div>
+        <div class="section_2a">
+            <div class="img_details">
+                <div><span>Picturesque Cafes <br> 17 places</span><i class="fas fa-caret-right"></i></div>
+                <img src="https://b.zmtcdn.com/data/collections/b90996d69bfe8d8c7e36d3a56893df74_1657000323.jpg?output-format=webp" alt="pictiresque">
+            </div>
+            <div class="img_details">
+                <div><span>Legendery Places <br> 24 places</span><i class="fas fa-caret-right"></i></div>
+                <img src="https://b.zmtcdn.com/data/collections/49a6f1f89106fa09c5c287ed6a7511af_1656936838.jpg?output-format=webp" alt="">
+            </div>
+            <div class="img_details">
+                <div><span>Themed Dining <br> 7 places</span><i class="fas fa-caret-right"></i></div>
+                <img src="https://b.zmtcdn.com/data/collections/84b4804b88ed17fd5d11a9e09931077d_1656933762.jpg?output-format=webp" alt="ThemedDining">
+            </div>
+            <div class="img_details">
+                <div><span>Family Time <br> 19 places</span><i class="fas fa-caret-right"></i></div>
+                <img src="https://b.zmtcdn.com/data/collections/1ef2df5d2d43a974efa2622b99673a47_1657170762.jpg?output-format=webp" alt="Familytime">
+            </div>
+        </div>
+        <h1>Popular localities in and around Hyderabad</h1>
+        <div class="section_2b">
+            <div class="locations">
+                <div>
+                    <span>Jubilee Hills
+                        <p>
+                            277places
+                        </p>
+                    </span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+            </div>
+            <div class="locations">
+                <div>
+                    <span>Gachibowli
+                        <p>
+                            472places
+                        </p>
+                    </span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+            </div>
+            <div class="locations">
+                <div>
+                    <span>Banjara Hills
+                        <p>
+                            323places
+                        </p>
+                    </span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+            </div>
+            <div class="locations">
+                <div>
+                    <span>Hitech City
+                        <p>
+                            224places
+                        </p>
+                    </span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+            </div>
+            <div class="locations">
+                <div>
+                    <span>Madhapur
+                        <p>
+                            523places
+                        </p>
+                    </span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+            </div>
+            <div class="locations">
+                <div>
+                    <span>Kondapur
+                        <p>
+                            323places
+                        </p>
+                    </span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+            </div>
+            <div class="locations">
+                <div>
+                    <span>Kukatpally
+                        <p>
+                            892places
+                        </p>
+                    </span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+            </div>
+            <div class="locations">
+                <div>
+                    <span>
+                        Begumpet
+                        <p>
+                            115places
+                        </p>
+                    </span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+            </div>
+            <div id="locations">
+                <div>
+                    <span>see more</span>
+                    <i class="fas fa-chevron-down "></i>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- section-3 -->
+    <section class="section_3 ">
+        <div class="flex contact">
+            <img src="https://b.zmtcdn.com/data/o2_assets/a500ffc2ab483bc6a550aa635f4e55531648107832.png " alt="mobileapppic ">
+            <div class="address ">
+                <h2>Get the Zomato app</h2>
+                <p>We will send you a link, open it on your phone to download the <br>app</p>
+                <div class="flex radio">
+                    <div>
+                        <input type="radio" name="fill " id="email " checked>
+                        <label for="email ">Email</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="fill " id="phone " checked>
+                        <label for="phone ">Phone</label>
+                    </div>
+                </div>
+                <div class="flex email">
+                    <input type="text " class="input" placeholder="Email" value="">
+                    <!-- <label for=" " class="place ">Email</label> -->
+                    <button>Share App Link</button>
+
+                </div>
+                <p class="download">Download App</p>
+                <div class="flex app">
+                    <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png " alt="googleplaystore ">
+                    <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png " alt="appstore ">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- section-4 -->
+    <!-- <section class="center_section">
+        <h1>Explore options near me</h1>
+        <details>
+            <summary>Popular cuisines near me</summary>
+            <div>
+                <p>
+
+                </p>
+            </div>
+        </details>
+        <details>
+            <summary>Popular restaurant types near me</summary>
+            <div>
+                <p>
+
+                </p>
+            </div>
+        </details>
+        <details>
+            <summary>Top Restaurant Chains</summary>
+            <div>
+                <p>
+
+                </p>
+            </div>
+        </details>
+        <details>
+            <summary>Cities We Deliver To</summary>
+            <div>
+                <p>
+
+                </p>
+            </div>
+        </details>
+    </section> -->
+    <!-- section -5 -- footer -->
+    <secton class="footer">
+        <div class="section5">
+            <div class="first">
+                <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*" alt="zomato png">
+                <div class="first_1a">
+                    <div>
+                        <span>
+                            <img src="https://i.pinimg.com/originals/af/60/9d/af609d4147b4f80f2f3cd769e74463dd.png" alt="india">India
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="18" height="18" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 iwHbVQ"><title>language-globe</title><path d="M10 0c-5.523 0-10 4.477-10 10s4.477 10 10 10c5.523 0 10-4.477 10-10v0c-0.011-5.518-4.482-9.989-9.999-10h-0.001zM17.14 6.18h-3c-0.264-1.393-0.63-2.62-1.107-3.791l0.047 0.131c1.755 0.733 3.161 2.010 4.039 3.618l0.021 0.042zM18.1 10c-0.002 0.676-0.090 1.33-0.252 1.954l0.012-0.054h-3.44c0.059-0.57 0.092-1.231 0.092-1.9s-0.034-1.33-0.099-1.982l0.007 0.082h3.44c0.15 0.57 0.238 1.224 0.24 1.899v0.001zM1.9 10c0.002-0.676 0.090-1.33 0.252-1.954l-0.012 0.054h3.46c-0.059 0.57-0.092 1.231-0.092 1.9s0.034 1.33 0.099 1.982l-0.007-0.082h-3.46c-0.15-0.57-0.238-1.224-0.24-1.899v-0.001zM7.48 8.1h5.040c0.063 0.57 0.099 1.231 0.099 1.9s-0.036 1.33-0.107 1.981l0.007-0.081h-5.040c-0.063-0.57-0.099-1.231-0.099-1.9s0.036-1.33 0.107-1.981l-0.007 0.081zM10.76 1.9c0.603 1.228 1.106 2.657 1.436 4.152l0.024 0.128h-4.44c0.354-1.623 0.857-3.052 1.51-4.395l-0.050 0.115c0.24 0 0.5 0 0.76 0s0.48 0 0.76 0zM6.96 2.48c-0.445 1.051-0.825 2.291-1.079 3.576l-0.021 0.124h-3c0.899-1.65 2.305-2.927 4.007-3.64l0.053-0.020zM2.86 13.8h3c0.262 1.4 0.629 2.634 1.107 3.811l-0.047-0.131c-1.757-0.738-3.165-2.022-4.039-3.637l-0.021-0.043zM9.24 18.1c-0.605-1.234-1.108-2.67-1.437-4.172l-0.023-0.128h4.44c-0.352 1.63-0.855 3.066-1.51 4.415l0.050-0.115c-0.24 0-0.5 0-0.76 0s-0.48 0-0.76 0zM13.040 17.52c0.431-1.046 0.798-2.28 1.041-3.558l0.019-0.122h3.040c-0.902 1.642-2.308 2.912-4.006 3.62l-0.054 0.020z"></path></svg>English
+                             
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </secton>
+
+
+
+
+
+
+</body>
+
+</html>
