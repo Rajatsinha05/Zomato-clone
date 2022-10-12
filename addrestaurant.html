@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Add a Restaurant - Zomato</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="./images/Zomato-Logo-PNG_ndz480.png" sizes="32x32" type="image/png">
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles.html/ar.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="artop">
+        <div id="arnav">
+            <img src="./images/zomatobusinesslogo.png" width="14%">
+        </div>
+        <div id="artopinfo">
+            <div id="artop-left">
+                <h1>Register your restaurant on Zomato</h1>
+                <h3>and get more customers!</h3>
+                <div id="artopbuttondiv">
+                    <button class="artopbuttons" onclick="">Register Your Restaurant</button>
+                    <button class="artopbuttons" onclick="">Restaurant already listed? Claim now</button>
+                </div>
+            </div>
+        </div>
+        <div id="artopgrey">
+            <div id="artopgrey-size">
+                <div id="artopgrey-white">
+                    <h1>Get started with online ordering</h1><br>
+                    <p>Please keep the documents ready for a smooth signup</p>
+                    <div id="topgreyinfo">
+                        <div id="topgreyinfo-left">
+                            <div class="topgreyinfoadj">
+                                <img src="./images/Eo_circle_green_white_checkmark.svg.png">
+                                <h3>FSSAI license copy</h3>
+                            </div>
+                            <div class="topgreyinfoadj">
+                                <img src="./images/Eo_circle_green_white_checkmark.svg.png">
+                                <h3>GSTIN (if applicable)</h3>
+                            </div>
+                            <div class="topgreyinfoadj">
+                                <img src="./images/Eo_circle_green_white_checkmark.svg.png">
+                                <h3>Your restaurant menu</h3>
+                            </div>
+                        </div>
+                        <div id="topgreyinfo-right">
+                            <div class="topgreyinfoadj">
+                                <img src="./images/Eo_circle_green_white_checkmark.svg.png">
+                                <h3>PAN card copy</h3>
+                            </div>
+                            <div class="topgreyinfoadj">
+                                <img src="./images/Eo_circle_green_white_checkmark.svg.png">
+                                <h3>Bank account details</h3>
+                            </div>
+                            <div class="topgreyinfoadj">
+                                <img src="./images/Eo_circle_green_white_checkmark.svg.png">
+                                <h3>Dish images for top 5 items</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="whiteaftergrey">
+        <div id="whiteaftergreysize">
+            <h1>Why should you partner with Zomato?</h1>
+            <h3>Zomato enables you to get 60% more revenue, 10x new customers and boost your brand visibility by providing insights to improve your business.</h3>
+        </div>
+        <div id="arfact">
+            <div id="factbox">
+                <img src="./images/earth.webp">
+                <div>
+                    <h2>1000+ Cities</h2>
+                    <p>in India</p>
+                </div>
+            </div>
+            <div id="factbox">
+                <img src="./images/restaurants.webp">
+                <div>
+                    <h2>3 lakh+</h2>
+                    <p>restaurant listings</p>
+                </div>
+            </div>
+            <div id="factbox">
+                <img src="./images/orders.webp">
+                <div>
+                    <h2>5.0 crore+</h2>
+                    <p>monthly orders</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="arhowitworks">
+        <img src="./images/howitworksbackground.webp" alt="">
+        <div id="howitworksinfo">
+            <h1>How it works?</h1>
+            <div id="howitworkscardbox">
+                <div id="howitworksbox">
+                    <div class="pinkcircle">
+                        <img src="./images/howitworks1.webp">
+                    </div>
+                    <h2>Step 1</h2>
+                    <h3>Create your page on Zomato</h3>
+                    <p>Help users discover your place by creating a listing on Zomato</p>
+                </div>
+                <div id="howitworksbox">
+                    <div class="pinkcircle">
+                        <img src="./images/howitworks2.webp">
+                    </div>
+                    <h2>Step 2</h2>
+                    <h3>Register for online ordering</h3>
+                    <p>And deliver orders to millions of customers with ease</p>
+                </div>
+                <div id="howitworksbox">
+                    <div class="pinkcircle">
+                        <img src="./images/howitworks3.webp">
+                    </div>
+                    <h2>Step 3</h2>
+                    <h3>Start receiving orders online</h3>
+                    <p>Manage orders on our partner app, web dashboard or API partners</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="greyalreadylisted">
+        <div id="greyalreadylistedsize">
+            <h1>Already have your restaurant listed?</h1>
+            <h3>Search here and claim the ownership of your restaurant</h3>
+        </div>
+    </div>
+    <div id="arfaqsection">
+        <h1>Frequently asked questions</h1>
+        <button class="collapsible">What will Zomato charge me for creating a page on its platform?</button>
+        <div class="content">
+            <p>Creating a restaurant page on Zomato is free of cost. You can maintain your page by replying to reviews and do a lot more without any charges.</p>
+        </div>
+        </div>
+</body>
+</html>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
