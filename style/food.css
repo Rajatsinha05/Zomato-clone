@@ -7,6 +7,24 @@ body {
 	font-family: "Inter", sans-serif;
 }
 
+
+body::-webkit-scrollbar {
+	width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+	/* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+	color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+	border-radius: 8px;
+	background-color: darkgrey;
+	/* width: 5px; */
+	background-color: #e03546;
+	outline: 1px solid slategrey;
+}
+
 .foodHeading {
 	color: #3f3f3f;
 
@@ -394,6 +412,7 @@ body {
 	gap: 2%;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 	width: 10%;
+	z-index: 15;
 }
 
 #dropUser p {
@@ -1152,10 +1171,132 @@ iframe{
 }
 
 
+/* Profile Section */
 
 
+#profileDiv{
+	background: linear-gradient(rgba(0, 0, 0, 0.13) 22.25%, rgba(0, 0, 0, 0.5) 55.5%) center center / cover no-repeat, url("https://b.zmtcdn.com/data/cover_images/7dc92ec243c19684b2eaefd0050d656e1548144012.jpeg?output-format=webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+	display: flex;
+	justify-content: space-between;
+	padding: 2%;
+	width: 80%;
+	margin: auto;
+	color: white;
+	font-size: 18px;
+	
+}
 
+#profileDiv >div> img{
+	border-radius: 100%;
+	background-color: white;
+	width: 60%;
+	margin: auto;
+}
 
+#profileDiv > div:first-child{
+	display: grid;
+	align-items: center;
+	grid-template-columns: repeat(2,1fr);
+}
+#profileDiv > div:nth-child(2){
+	display: grid;
+	font-size: 10px;
+	align-items: center;
+	text-align: center;
+	grid-template-columns: repeat(3,1fr);
+}
+
+#profileDiv > div:last-child  h4{
+	border-right: 1px solid white;
+	/* padding: 2% 0%; */
+	font-size: large;
+}
+#profileBody{
+	display: grid;
+	grid-template-columns: 25% 75%;
+	gap: 5px;
+	width: 80%;
+	margin: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+#bodySection{
+	display: grid;
+	height: fit-content;
+}
+#bodySection >h2{
+	padding: 4% 2%;
+	font-size: larger;
+	border: 1px solid pink;
+	font-weight: lighter;
+	color: #92434f;
+	margin: 1px;
+}
+#bodySection >h2:first-child{
+	/* border-right: 5px solid red; */
+	background-color: #C82941;
+	color: white;
+}
+
+#bodySection2{
+	/* border: 1px solid black; */
+	/* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+	/* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+	color: white;
+	border: 1px solid pink;
+}
+
+#bodySection2{
+	padding: 2%;
+}
+#headingBodySection2{
+	color: #105039;
+	font-size: 30px;
+	/* text-align: center; */
+	width: fit-content;
+	margin: auto;
+	/* text-decoration: underline; */
+	border-bottom: 2px solid pink;
+
+}
+
+form{
+	margin-top: 4%;
+}
+label{
+	color: rgb(41, 35, 35);
+	font-size: large;
+}
+
+button[type="submit"]{
+	width: 40%;
+	display: block;
+	margin: auto;
+	margin-top: 2%;
+	background-color: #C82941;
+}
+.btn:focus, .btn-primary:focus{
+	background-color: #C82941;
+}
+
+.form-control{
+	/* border: black 1px solid; */
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+.form-control:focus {
+	border-color: #FF0000;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+  }
+
+.mb-2{
+	width: 80%;
+	margin: auto;
+}
 
 /* ResponsiveNess */
 
@@ -1252,7 +1393,16 @@ iframe{
 	#foodDescriptionHeaders{
 		justify-content: center;
 	}
-	
+	.foodTime{
+		bottom: 35%;
+	}
+	#profileBody{
+		grid-template-columns: repeat(1,1fr);
+	}
+	#profileDiv > div:last-child{
+		display: none;
+
+	}
 }
 @media screen and (max-width: 650px) {
 	#firstFoodCrousel {

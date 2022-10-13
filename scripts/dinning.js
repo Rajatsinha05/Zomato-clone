@@ -10,6 +10,20 @@ document.getElementById("selectionDiv2").style.borderBottom="2px solid #F05665";
 document.getElementById("selectionContainer2").style.backgroundColor="#FCEEC0";
 
 
+setTimeout(() => {
+    document.querySelector("#navbarSectionFirst>img").addEventListener("click",()=>{
+        window.location.href="index.html"
+    })
+    document.querySelector("#profileSection").addEventListener("click",()=>{
+        window.location.href="profile.html"
+    })
+
+}, 1);
+
+
+
+
+
 
 setInterval(() => {
     if(document.getElementById("search").placeholder=="Search for Restaurant"){

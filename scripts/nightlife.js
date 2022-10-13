@@ -12,6 +12,15 @@ document.getElementById("selectionContainer3").style.backgroundColor="#EDF4FF";
 
 
 
+setTimeout(() => {
+    document.querySelector("#navbarSectionFirst>img").addEventListener("click",()=>{
+        window.location.href="index.html"
+    })
+    document.querySelector("#profileSection").addEventListener("click",()=>{
+        window.location.href="profile.html"
+    })
+
+}, 1);
 
 
 

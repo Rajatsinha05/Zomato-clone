@@ -3,6 +3,17 @@ import {navbar,selectionNavbar } from "../components/navbar.js";
 
 document.getElementById("foodNavbar").innerHTML=navbar();
 
+setTimeout(() => {
+    document.querySelector("#navbarSectionFirst>img").addEventListener("click",()=>{
+        window.location.href="index.html"
+    })
+    document.querySelector("#profileSection").addEventListener("click",()=>{
+        window.location.href="profile.html"
+    })
+
+}, 1);
+
+
 
 setInterval(() => {
     if(document.getElementById("search").placeholder=="Search for Restaurant"){
@@ -15,6 +26,12 @@ setInterval(() => {
         document.getElementById("search").placeholder="Search for Restaurant";
     }
 }, 2000);
+
+
+
+
+
+
 
 
 
@@ -189,6 +206,24 @@ let showProduct = (data,location)=>{
 }
 
 showProduct(foodShow,document.getElementById("showItem"));
+
+
+
+document.getElementById("dropUserButton").addEventListener("click",userDropDown);
+document.getElementById("userImage").addEventListener("click",userDropDown);
+document.getElementById("userNameNav").addEventListener("click",userDropDown);
+
+function userDropDown(){
+    if(document.getElementById("dropUser").style.display=="none"){
+        document.getElementById("dropUser").style.display="grid"
+        // document.getElementById("dropUserButton").setAttribute("class","flipClass");
+    }
+    else{
+        
+        document.getElementById("dropUser").style.display="none"
+        // document.getElementById("dropUserButton").classList[0].remove()
+    }
+}
 
 
 

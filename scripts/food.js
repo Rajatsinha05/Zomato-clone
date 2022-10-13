@@ -10,6 +10,18 @@ document.getElementById("selectionImg1").src="https://b.zmtcdn.com/data/o2_asset
 document.getElementById("selectionContainer1").style.backgroundColor="#FCEEC0";
 
 
+setTimeout(() => {
+    document.querySelector("#navbarSectionFirst>img").addEventListener("click",()=>{
+        window.location.href="index.html"
+    })
+    document.querySelector("#profileSection").addEventListener("click",()=>{
+        window.location.href="profile.html"
+    })
+
+}, 1);
+
+
+
 
 setInterval(() => {
     if(document.getElementById("search").placeholder=="Search for Restaurant"){
