@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/zomato/SignUpPage.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/zomato/SignUpPage.css">
 </head>
+
 <body>
-    <div id="signup-id">
-        <div class="signup-container">
-              <h2 class="signup-heading">Sign up</h2>
-              <input type="text" placeholder="Full Name" id="input-number"/><br/>
-              <input type="email" placeholder="Email" id = "input-email"/><br/>
-              <div id="checking">
-                <input type="checkbox" id = "checkbox">
-                <label for="checkbox" id = "label-checkbox">
-                  I agree to Zomato's Terms of Service, Privacy Policy and Content Policies
-                </label>
-              </div>
-              <button class="signup-button">Create Password</button>
+
+  <button id="trigger">Trigger</button>
+    <div class="signup-id">
+      <div class="signup-container">
+        <span class="close-button">×</span>
+        <h2 class="signup-heading">Sign up</h2>
+        <input type="text" placeholder="Full Name" id="input-number" /><br />
+        <input type="email" placeholder="Email" id="input-email" /><br />
+        <input type="password" placeholder="Password" id="input-password" /><br />
+        <div id="checking">
+          <input type="checkbox" id="checkbox" onclick="check()">
+          <label for="checkbox" id="label-checkbox">
+            I agree to Zomato's Terms of Service, Privacy Policy and Content Policies
+          </label>
         </div>
-        <div class="strike">
+        <button class="signup-button" onclick="StoreTheData(event)">Create account</button>
+        <div class=" strike">
           <span>or</span>
         </div>
-        <div class="signup-container">
-          <button class="signup-button">
-              <div class = "inside-signup-button">
-                <span class = "img">
-                    <img src="/zomato/icons8-google-48.png" id="mail-icon" alt="" />
-                </span>
-                  <p>Continue with Google</p>
-              </div>
-            </button>
-          <p>Already have an account?  <a href="/zomato/LoginPage.html">Log in</a></p>
-        </div>
+        <button class="signup-button">
+          <div class="inside-signup-button">
+            <span class="img">
+              <img src="/zomato/icons8-google-48.png" id="mail-icon" alt="" />
+            </span>
+            <p>Continue with Google</p>
+          </div>
+        </button>
+        <p>Already have an account? <a href="/zomato/LoginPage.html">Log in</a></p>
       </div>
+    </div>
 </body>
+
 </html>
+<script src="/zomato/SignUpPage.js "></script>

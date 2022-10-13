@@ -1,15 +1,28 @@
+
+
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#signup-id{
+.signup-id{
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, 0);
+    visibility: hidden; 
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+
     display: flex;
     flex-direction: column;
-    border: 1px solid rgb(52, 50, 50);
-    width: 28%;
+    justify-content: center;
+    width: 25%;
     border-radius: 2%;
     padding: 2%;
-    margin-bottom: -5px;
+    margin: auto auto;
+    margin-top: 10%;
+    padding: 1%;
+    
 }
 .signup-button:last-child{
     background-color: rgba(62, 60, 61, 0.453);
@@ -23,22 +36,48 @@
     width: 98%;
     height: 5vh;
 }
+#input-password{
+    width: 98%;
+    height: 5vh;
+    margin-top: 5%;
+}
 #input-email{
     width: 98%;
     height: 5vh;
     margin-top: 5%;
+}
 
-    /* background-color: blue; */
+/* starting modal */
+.signup-container{
+    border: 1px solid blue;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 24rem;
+    transform: translate(-10%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
 }
-/* #input-number::-webkit-outer-spin-button,
-#input-number::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-  
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+} 
+.close-button:hover {
+    background-color: rgb(218, 206, 206);
 }
-#input-number[type=number] {
-  -moz-appearance: textfield;
-} */
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+/* end modal */
 
 #checking{
     display: flex;
@@ -60,7 +99,6 @@ input[type=checkbox]:hover {
     font-weight: lighter;
     color: rgba(63, 61, 61, 0.833);
     cursor: pointer;
-    /* margin: 20px; */
     border-radius: 5px;
     border: 0ch;
 }
@@ -70,6 +108,7 @@ input[type=checkbox]:hover {
 }
 
 /* or */
+
 .strike {
     display: block;
     text-align: center;
@@ -128,4 +167,47 @@ input[type=checkbox]:hover {
 .signup-container p a{
     text-decoration: none;
     color: rgb(239,79,95);
+}
+
+@media screen and (max-width : 460px){
+    .signup-id{
+        flex : 100%;
+        display : flex;
+        margin-top: 40%;
+        margin-left : -61%;
+        flex-direction: row;
+        width: 95%; 
+    }
+    
+}
+@media screen and (min-width : 461px) and (max-width: 750px){
+    .signup-id{
+        flex : 100%;
+        display : flex;
+        margin-top: -55%;
+        margin-left : -54%;
+        flex-direction: row;
+        width: 95%; 
+    } 
+}
+@media screen and (min-width : 751px) and (max-width: 1080px){
+    .signup-id{
+        flex : 100%;
+        display : flex;
+        margin-top: 20%;
+        margin-left : -65%;
+        flex-direction: row;
+        width: 95%; 
+    }   
+}
+@media screen and (min-width : 1081px) and (max-width: 1540px){
+    .signup-id{
+        flex : 100%;
+        display : flex;
+        margin-top: 15%;
+        margin-left : -70%;
+        flex-direction: row;
+        width: 100%; 
+    }
+    
 }
