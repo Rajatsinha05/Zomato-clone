@@ -8,6 +8,10 @@
     <link rel="icon" href="./images/Zomato-Logo-PNG_ndz480.png" sizes="32x32" type="image/png">
     <link rel='stylesheet' type='text/css' media='screen' href='./styles.html/ar.css'>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     
 </head>
 <body>
@@ -129,15 +133,118 @@
         <div id="greyalreadylistedsize">
             <h1>Already have your restaurant listed?</h1>
             <h3>Search here and claim the ownership of your restaurant</h3>
+            <div id="alreadylistedinput">
+                <input type="text" value="" placeholder="Delhi NCR" id="alreadylistedinput-left">
+                <input type="text" value="" placeholder="Search for your restaurat Eg. Greenland Cafe" id="alreadylistedinput-right">
+            </div>
+        </div>
+    </div>
+    <div id="arourproducts">
+        <div id="arourproductssize">
+            <h1>Our Products</h1>
+            <div id="arourproducrsslider">
+                
+            </div>
+        </div>
+    </div>
+    <div id="arwhatyougetonsignup">
+        <div id="arwhatyougetonsignup-size">
+            <h1>What do you get on sign-up</h1>
+            <h3>Zomato Partner Platform helps you take your business to new heights instantly with no hassle and 100% transparency!</h3>
+            <div id="getonsignup">
+                <div id="getonsignup-left">
+                    <div class="getsignupinfobox">
+                        <div><h2>1</h2></div>
+                        <div>
+                            <h2>Restaurant Patner App</h2>
+                            <h3>Manage all your orders on your smartphone with our Android app</h3>
+                        </div>
+                    </div>
+                    <div class="getsignupinfobox">
+                        <div><h2>2</h2></div>
+                        <div>
+                            <h2>Restaurant Partner web dashboard</h2>
+                            <h3>Manage all your orders on your desktop or laptop</h3>
+                        </div>
+                    </div>
+                    <div class="getsignupinfobox">
+                        <div><h2>3</h2></div>
+                        <div>
+                            <h2>API integration</h2>
+                            <h3>Manage all your orders on your existing Point of Sale (POS) or third party software</h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="getonsignup-right"></div>
+            </div>
+        </div>
+    </div>
+    <div id="arstartjourney">
+        <div id="arstartjourney1">
+            <img src="./images/StartJourney.7cfaaf0a.jpg" alt="">
+            <div id="arstartjourney1info">
+                <h1>Start your journey with Zomato</h1>
+                <h3>Create your restaurant page and register for online ordering</h3>
+                <button class="getstartedbluebutton">Start Now</button>
+            </div>
         </div>
     </div>
     <div id="arfaqsection">
         <h1>Frequently asked questions</h1>
         <button class="collapsible">What will Zomato charge me for creating a page on its platform?</button>
         <div class="content">
-            <p>Creating a restaurant page on Zomato is free of cost. You can maintain your page by replying to reviews and do a lot more without any charges.</p>
+            <p>Creating a restaurant page on Zomato is free of cost. You can maintain your page by replying to reviews and
+                do a lot more without any charges.</p>
         </div>
+        <button class="collapsible">What all documents are required for registering on online ordering?</button>
+        <div class="content">
+            <p>Registration for online ordering requires:<br>
+                a: FSSAI certificate (application no. if FSSAI is not present)<br>
+                b: PAN Card<br>
+                c: GST certificate (if applicable)</p><br>
         </div>
+        <button class="collapsible">I have a large fleet of delivery boys, why should I use Zomato’s delivery service?</button>
+        <div class="content">
+            <p>You can use your and Zomato's delivery fleet simultaneously to increase the network of your delivery radius. Also, our delivery fleet delivers orders in minimum possible time, a key factor leading to increased customer satisfaction.</p>
+        </div>
+        <button class="collapsible">What happens if the average order value of Zomato orders is very low</button>
+        <div class="content">
+            <p>Average order value from our platform is generally more than Rs 250. However, in some cases, users want to try out your place by ordering for lesser amount. But we have observed that they eventually come back with higher value orders if they like your food.</p>
+        </div>
+    </div>
+    <div id="arcontactus">
+        <img src="./images/contact-us-form background.webp">
+        <div id="arcontactusinfo">
+            <div id="arcontactus-left">
+                <h1>Cannot find your favourite restaurant on Zomato?</h1>
+                <h3>Submit the details and our team will get the restaurant onboard</h3>
+            </div>
+            <!-- <div id="arcontactus-right">
+                <div id="arcontactus-rightinput">
+                    <input type="text" placeholder="Restaurant Name*">
+                </div>
+            </div> -->
+            <div id="arfooter2-right">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" autocomplete="off">
+                    <label for="floatingInput">Restaurant Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" autocomplete="off">
+                    <label for="floatingInput">Restaurant Location</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" autocomplete="off">
+                    <label for="floatingInput">Restaurant Contact Number</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" autocomplete="off">
+                    <label for="floatingInput">What do you like about the restaurant?</label>
+                </div>
+                <button class="contactusbuttonsubmit">Submit</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 <script>

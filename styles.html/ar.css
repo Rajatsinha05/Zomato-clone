@@ -29,7 +29,7 @@
     margin-top: 1%;
 }
 #artopbuttondiv{
-    width: 80%;
+    width: 82%;
     display: flex;
 }
 .artopbuttons{
@@ -50,7 +50,7 @@
 }
 #artopgrey{
     background-color: #f4f4f4;
-    height: 400px;
+    height: 600px;
 }
 #artopgrey-size{
     width: 60%;
@@ -80,17 +80,17 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     margin: auto;
-    gap: 10%;
 }
 .topgreyinfoadj{
     display: flex;
     align-items: center;
     margin: auto;
     margin-top: 20%;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
 }
 .topgreyinfoadj h3{
-    font-weight: 400;
+    font-weight: 200;
+    font-size: 150%;
     margin-left: 2%;
     color: #363636;
 }
@@ -138,10 +138,13 @@
     margin: 10%;
     height: 50%;
     width: auto;
+}#factbox > div{
+    align-content: center;
+    align-items: center;
 }
 #factbox > div >h2{
     color: #2781E7;
-    font-weight: 400;
+    font-weight: 300;
 }
 #arhowitworks > img {
     width: 100%;
@@ -213,9 +216,96 @@
     font-size: 150%;
     color: #6b6b6b;
 }
+#alreadylistedinput{
+    display: flex;
+}
+#alreadylistedinput-left{
+    width: 20%;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style:hidden;
+    border-bottom-style: hidden;
+    padding: 2%;
+    margin-bottom: 5%;
+}
+#alreadylistedinput-right{
+    width: 80%;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: groove;
+    border-bottom-style: hidden;
+    padding: 2%;
+    margin-bottom: 5%;
+}
+
+#arourproductssize{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+#arstartjourney1{
+    width: 60%;
+    margin: auto;
+}
+#arstartjourney1 > img{
+    width: 100%;
+}
+#arstartjourney1info{
+    color: white;
+    margin-top: -25%;
+    padding-left: 3%;
+}
+#arstartjourney1info h1{
+    font-weight: 300;
+    font-size: 300%;
+}
+#arstartjourney1info h3{
+    font-weight: 300;
+    font-size: 130%;
+    margin-top: 2%;
+}
+.getstartedbluebutton{
+    background-color: #2781E7;
+    margin-top: 1%;
+    padding: 1.5%;
+    width: 20%;
+    font-size: 120%;
+    color: white;
+    border-radius: 10px;
+}
+.getstartedbluebutton:hover{
+    background-color:#0c60bf
+}
+#arwhatyougetonsignup-size{
+    width: 60%;
+    margin: auto;
+}
+#arwhatyougetonsignup-size h1{
+    font-weight: 300;
+    font-size: 300%;
+}
+#arwhatyougetonsignup-size h3{
+    font-weight: 300;
+    font-size: 150%;
+    color: #6b6b6b;
+}
+#getonsignup{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5%;
+    margin-bottom: 10%;
+}
+.getsignupinfobox{
+    display: flex;
+    margin-top: 10%;
+}
+.getsignupinfobox > div{
+    margin-left: 2%;
+}
 #arfaqsection{
     width: 60%;
     margin: auto;
+    margin-top: 5%;
 }
 #arfaqsection h1{
     padding-top: 10% ;
@@ -256,7 +346,53 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: white;
-  border: 1px solid gainsboro;
   font-size: 150%;
   font-weight: 300;
+}
+#arcontactus{
+    margin-top: 5%;
+}
+#arcontactus > img{
+    width: 100%;
+}
+#arcontactusinfo {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    margin: auto;
+    margin-top: -35%;
+}
+#arcontactus-left{
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+#arcontactus-left h1{
+    font-weight: 300;
+    font-size: 300%;
+}
+#arcontactus-left h3{
+    margin-top: 5%;
+    font-weight: 300;
+    font-size: 200%;
+}
+#arfooter2-right{
+    width: 80%;
+    padding: 5%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: white;
+}
+.contactusbuttonsubmit{
+    background-color:#2781E7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 2%;
+    width: 100%;
+}
+.contactusbuttonsubmit:hover{
+    background-color: #0c60bf;
 }
