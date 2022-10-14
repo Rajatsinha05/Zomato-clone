@@ -198,10 +198,10 @@ let addToCart=(ele)=>{
         
     }
     else{
-        alert.style.color="white";
-        alert.style.backgroundColor="rgb(224, 53, 70)";
-        alert.style.border="1px solid rgb(224, 53, 70)";
-        alert.innerHTML=`Already in Cart <i class="fa-solid fa-xmark"></i>`;
+            alert.style.color="white";
+            alert.style.backgroundColor="rgb(224, 53, 70)";
+            alert.style.border="1px solid rgb(224, 53, 70)";
+            alert.innerHTML=`Wrong Credentials <i class="fa-solid fa-xmark"></i>`;
         
 
     }
