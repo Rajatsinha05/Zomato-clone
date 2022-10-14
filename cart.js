@@ -30,14 +30,20 @@ let  data =[{
 
 
 function show(){
+  let boxdiv= document.createElement("div");
+  let dis= document.createElement("h3")
 let divt= document.createElement("div");
   let imgdiv= document.createElement("div");
   let text = document.createElement("div");
 let order = document.createElement("h3");
+let it = document.createElement("img");
 
+it.src=`https://cdn-icons-png.flaticon.com/512/27/27133.png`
 let h4 = document.createElement("h4");
-h4.innerText=`Delivery in ${data[0].time}`;
-divt.append(h4);
+it.setAttribute("id","icon")
+divt.setAttribute("id","timg")
+h4.innerText=`  Delivery in ${data[0].time}`;
+divt.append(it,h4);
 document.getElementById("box-2").append(divt);
   order.innerText =`Your Order`;
   text.append(order)
@@ -51,16 +57,20 @@ img.src =ele.img;
 let title = document.createElement("h3");
 title.innerText=ele.food;
 
-
+let pricebox = document.createElement("div")
 let name = document.createElement("h3");
 name.innerText=ele.food;
+let pbox = document.createElement("h3")
 
 
 console.log(name);
 let pre = document.createElement("p")
 pre.innerText=`₹${ele.price}`;
-flexdiv.append(img,title)
-imgdiv.append(flexdiv);
+flexdiv.append(img,title);
+
+let str = document.createElement("div")
+str.setAttribute('id','str')
+imgdiv.append(flexdiv,str);
 text.append(name,pre);
 document.getElementById("box-1").append(imgdiv);
 
@@ -91,6 +101,28 @@ document.getElementById("box-2").append(text);
  send.innerText=`send personalized message and e-card `
  div7.append(ord,send);
  document.getElementById("box-2").append(div7);
+
+
+
+
+
+
+
+
+//  cancelll
+
+let div8= document.createElement("div");
+let cen= document.createElement("h3");
+cen.innerText=` Cencellation policy`
+let con = document.createElement("p")
+con.innerText=`100% cencellation fee  will be applicable if you decide to cencel the order any time after order placement. Avoid  cencellation as it leads to food wastage`
+div8.append(cen,con);
+document.getElementById("box-2").append(div8);
+
+
+
+
+
 }
 
 show()
