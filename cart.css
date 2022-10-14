@@ -1,0 +1,137 @@
+/* #content-box{
+    width:100%;
+    height:100%;
+    border: 1px solid black;
+    display: flex;
+
+    gap:1em
+}
+#box-1{
+    border: 1px solid rgb(191, 26, 26);
+}
+#box-2{
+    border: 1px solid rgb(31, 232, 131);
+}
+
+#mainbox{
+    border: 1px solid rgb(30, 19, 228);
+    
+    
+}
+#img{
+    border: 1px solid rgb(194, 13, 154);
+    width: 15%;
+
+}
+
+
+/*  */
+
+
+
+
+
+
+
+*{
+   margin: 0;
+   padding: 0;
+
+} 
+
+
+
+
+
+
+/* #mainbox #text{
+    border: 1px solid rgb(174, 187, 184);
+}
+#imgdiv{
+    display: flex;
+    justify-items: center;
+}
+#food {
+    border: 1px solid rgb(44, 135, 11);
+    text-align: center;
+    margin-top:300px;
+}  */ 
+
+#box-1 div img{
+    width:100px;
+    border-radius: 10px;
+}
+
+#content-box{
+    display: flex;
+    gap: 50px;
+    border: 1px solid rgb(34,45,79)
+}
+
+#box-1{
+    border: 1px solid rgb(11, 169, 74) 
+}
+
+#box-2{
+   width:50%;
+   margin: 30px
+   
+}
+#itbox{
+    /* border: 1px solid rgb(238, 122, 20) ; */
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    gap:190px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+margin-top: 10px;
+    border-radius:15px;
+    margin-left: 30px;;
+    margin-top: 40px;
+}
+#box-2 div{
+    margin: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    border-left:1px solid red;
+    padding-top: 10px;
+    padding-bottom: 15px;
+   
+}
+#box-2 div h3{
+    margin-top:10px;
+    padding-bottom: 5px;;
+}
+#timg{
+    display:flex;
+gap:10px;
+justify-items: center;
+}
+#icon{
+    width:30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    /* background-color: yellow;
+    border-radius: 120px; */
+}
+#timg h4{
+    margin-top: 18px;
+}
+#box-2 p{
+    color: rgb(95, 90, 90)
+}
+#str{
+    width: 2px;
+    height: 20px;
+    background-color:red;
+    position:absolute;
+    top: 20px
+}
+#box{
+    border: 1px solid rgb(225, 167, 9)    
+}
