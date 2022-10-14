@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../loginSIgnup/login&Signup.css">
 </head>
 
 <title>Zomato</title>
@@ -20,7 +21,7 @@
     <header>
         <div class="navBar">
             <div>
-                <h4 id="getTheApp">Get the App</h4>
+                <h4 id="getTheApp"><i class="fa-solid fa-mobile-screen-button"></i> Get the App</h4>
             </div>
             <div id="options">
                 <ul class="rightFloat" id="responsiveNavbarHome">
@@ -28,8 +29,8 @@
                     <img style="display: none;" id="imageInToogleBtn" src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" class="img-fluid" alt="headerImage">
                     <li>Investor Relations</li>
                     <li>Add Restaurant</li>
-                    <li>Log in</li>
-                    <li>Sign up</li>
+                    <li id="logInNavButton">Log in</li>
+                    <li id="signUpNavButton">Sign up</li>
                 </ul>
             </div>
             <div class="hamburger">
@@ -45,13 +46,24 @@
             <div class="search">
                 <div class="search_item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <p style="margin-left: 1.3rem;">Hyderabad</p>
-
+                    <!-- <input style="margin-left: 1.3rem;">Hyderabad</p> -->
+                    <input type="text"  placeholder="Your City" id="searchLocation">
+                    <i id="dropShowLocations"class="fa-solid fa-caret-down"></i>
                     </label>
+                    <div id="showLocations">
+                        <div id= "detectLocation">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Detect My Location
+                        </div>
+                        <div id="locationSuggestions">
+            
+                        </div>
+                    </div>
+
                 </div>
                 <div class="search_item">
                     <i id="search" class="fas fa-search"></i>
-                    <input type="text" class="searchData" placeholder="Search for restaurents, cuisin or a dish" value="">
+                    <input type="text" class="searchData" id="search1" placeholder="Search for restaurents, cuisin or a dish" value="">
                 </div>
             </div>
 
@@ -65,7 +77,7 @@
     </header>
     <!-- Section 1 -->
     <section class="section_1">
-        <div class="section_1_item">
+        <div class="section_1_item" id="section_item1">
             <div class="item-details">
                 <p style="font-size: 25px; font-weight: bold; color: rgb(70, 67, 67); margin-top: 5px; margin-bottom: -5px;">
                     Order online</p>
@@ -75,7 +87,7 @@
             <img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt="orderonline">
         </div>
         </div>
-        <div class="section_1_item">
+        <div class="section_1_item" id="section_item2" >
             <div class="item-details">
                 <p style="font-size: 25px; font-weight: bold; color: rgb(70, 67, 67); margin-top: 5px; margin-bottom: -5px;">
                     Dining</p>
@@ -88,7 +100,7 @@
 
 
         </div>
-        <div class="section_1_item">
+        <div class="section_1_item" id="section_item3">
             <div class="item-details">
                 <p style="font-size: 25px; font-weight: bold; color: rgb(70, 67, 67); margin-top: 5px; margin-bottom: -5px;">
                     Nightlife and clubs</p>
@@ -367,41 +379,13 @@
     </section>
     <hr>
     <p class="third">&copy;By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd. All rights reserved.</p>
+    <div id="UserSIgnUpLogInModal">
+        
+    </div>
+
+    <div id="alert"></div>
 </body>
 
 
 </html>
-<script>
-    let flag = true;
-    const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector(".rightFloat");
-    hamburger.addEventListener("click", () => {
-        if (flag) {
-            document.getElementById("imageInToogleBtn").style.display = "block";
-            document.querySelector("body").style.overflow = "hidden"
-            flag = false;
-        } else {
-            document.getElementById("imageInToogleBtn").style.display = "none";
-            document.querySelector("body").style.overflow = "auto"
-
-            flag = true;
-        }
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-        // document.getElementById("imageInToogleBtn").style.display = "none";
-    })
-    document.querySelectorAll(".rightFloat li").forEach(n => n.addEventListener("click", () => {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-        document.getElementById("imageInToogleBtn").style.display = "none";
-    }))
-
-    // document.getElementById("cancelButtonNavbar").addEventListener("click", closeNavbarSection);
-
-    // function closeNavbarSection() {
-    //     if (document.getElementById("responsiveNavbarHome").style.display != "none") {
-    //         document.getElementById("responsiveNavbarHome").style.display = "none"
-
-    //     }
-    // }
-</script>
+<script src="./index.js" type="module"></script>

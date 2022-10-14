@@ -24,6 +24,8 @@
 			href="https://unpkg.com/flickity@2/dist/flickity.min.css"
 		/>
 		<link rel="stylesheet" href="../style/food.css" />
+		<link rel="stylesheet" href="../../loginSIgnup/login&Signup.css">
+
 		<title>Zomato</title>
 		<style></style>
 	</head>
@@ -36,7 +38,7 @@
 				
 				<img src="https://mse.ieor.columbia.edu/themes/custom/columbia/assets/img/people-default.svg" id="userImage"alt="">
 				<div>
-					<h4>User</h4>
+					<h4 id="profileUserName">User</h4>
 					<h4><i class="fa-solid fa-location-dot"></i> <span id="cityName1">Your City</span> </h4>
 				</div>
 				
@@ -60,23 +62,23 @@
 				<form action="">
 					<div class="mb-2">
 						<label for="name" class="form-label">Name</label>
-						<input type="text" class="form-control"  id="name" placeholder="Enter Name">
+						<input type="text" class="form-control"  id="name" required placeholder="Enter Name">
 					  </div>
 					<div class="mb-2">
 						<label for="email" class="form-label">Email address</label>
-						<input type="email" class="form-control" readonly id="email" placeholder="Enter Email">
+						<input type="email" class="form-control" readonly id="email"required placeholder="Enter Email">
 					  </div>
 					<div class="mb-2">
 						<label for="oldPass" class="form-label">Old Password</label>
-						<input type="password" class="form-control"  id="oldPass" placeholder="Enter Old Password">
+						<input type="password" class="form-control"  id="oldPass" required placeholder="Enter Old Password">
 					  </div>
 					<div class="mb-2">
 						<label for="newPass" class="form-label">New Password</label>
-						<input type="password" class="form-control"  id="oldPass" placeholder="Enter New Password">
+						<input type="password" class="form-control"  id="newPass" required placeholder="Enter New Password">
 					  </div>
 					<div class="mb-4">
 						<button type="submit" class="btn btn-primary mb-4">Update Details </button>
-					  </div>
+					</div>
 
 					  
 				</form>
@@ -87,6 +89,9 @@
 
 
 		<div id="alert"></div>
+		<div id="UserSIgnUpLogInModal">
+        
+		</div>
 
 		<script src="../scripts/profile.js" type="module"></script>
 		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>

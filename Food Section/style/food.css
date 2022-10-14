@@ -623,7 +623,7 @@ body::-webkit-scrollbar-thumb {
 
 .foodTime {
 	position: absolute;
-	bottom: 28%;
+	bottom: 33%;
 	right: 5%;
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #ffffff;
 	color: white;
@@ -1106,11 +1106,13 @@ iframe{
 	height: fit-content;
 }
 #contactUs p{
-    font-weight: 400;
+	font-weight: 400;
     font-size: larger;
-    line-height: 70%;
-    /* color: rgb(151, 131, 134);; */
+    line-height: 109%;
+    padding: 2% 0%;
 }
+    /* color: rgb(151, 131, 134);; */
+
 #contactUs #contactNumber:last-child{
     font-weight: 400;
     font-size: small;
@@ -1316,6 +1318,15 @@ button[type="submit"]{
 	background-color:#C82941 ;
 	color: white;
 }
+
+#userNameNav{
+	width: 50px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
 
 /* ResponsiveNess */
 

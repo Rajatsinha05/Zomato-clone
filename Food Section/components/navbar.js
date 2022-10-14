@@ -36,7 +36,7 @@ const navbar = ()=>{
     <i class="fa-solid fa-angle-down" id="dropUserButton"></i>
     <div id="dropUser">
         <p id="profileSection">Profile</p>
-        <p>LogOut</p>
+        <p id="logOutBttn">LogOut</p>
     </div>
    
 </div>
