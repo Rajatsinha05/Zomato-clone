@@ -340,6 +340,15 @@ function price(total){
         document.getElementById("box-2").innerText='';
     }
     else{
+
+let pd1=document.createElement("div");
+let pd2=document.createElement("div");
+let pd3=document.createElement("div");
+let pd4=document.createElement("div");
+let pd5=document.createElement("div");
+
+
+
     document.getElementById("box-2").innerText='';
 localStorage.setItem("price",total);
 
@@ -347,31 +356,122 @@ localStorage.setItem("price",total);
 let h2= document.createElement("h2");
 h2.innerText=`Bill Summary`;
 let p1= document.createElement("p");
-p1.innerText=`Item total       ₹ ${total}.00`
+
+let p11= document.createElement("p");
+
+p11.innerText=`  ₹ ${total}.00`
+p1.innerText=`Item total      `
+pd1.append(p1,p11);
+// ₹ ${total}.00
 let p2= document.createElement("p");
-p2.innerText=`Delivary charges ₹20` 
+let p22= document.createElement("p");
+p22.innerText=`₹20.00`
+
+p2.innerText=`Delivary charges ` 
+pd2.append(p2,p22)
 
 let p3= document.createElement("p");
-p3.innerText=`Govt.taxes ₹10` 
+let p33= document.createElement("p");
+p33.innerText=`₹10.00`
+
+
+p3.innerText=`Govt.taxes ` 
+pd3.append(p3,p33)
 let p4= document.createElement("p");
-p4.innerText=`Feeding India donation ₹2` 
+
+let p44= document.createElement("p");
+p44.innerText=`₹2.00`
+p4.innerText=`Feeding India donation ` 
+pd4.append(p4,p44)
 let p5= document.createElement("h3");
+let p55= document.createElement("h3");
+
 
 let gt=total+20+10+2;
-p5.innerText=`Grand Total ₹${gt}`
+p55.innerText=` ₹${gt}.00`
+
+p5.innerText=`Grand Total`
+pd5.append(p5,p55)
+
+pd5.setAttribute("id","prd")
 
 let cout=document.createElement("div");
 cout.setAttribute('id',"odr")
-// cout.style.backgroundColor="rgb(247, 93, 93)";
+
 let order=document.createElement("h2")
 order.innerHTML=`Place order`
 cout.append(order)
 
 let input=document.createElement("input");
 input.type="text"
+input.setAttribute("id","val")
+
+
+
+
+// coupons----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input.addEventListener("keypress",function(e) {
+
+if(e.key =="Enter"){
+  event.preventDefault();
+  let txt=document.getElementById("val").value;
+  if(txt=="zomato50"){
+    let value=(gt-(gt/100)*50)
+
+
+    
+   console.log(gt-(gt/100)*10 )
+
+
+   let fdiv=document.createElement("div")
+
+
+   let fpr= document.createElement("h3");
+
+
+  //  let gt=total+20+10+2;
+   fpr.innerText=` ₹${value}.00`
+   let ftxt=document.createElement("h3")
+   ftxt.innerText=`Final Total`
+   fdiv.append(ftxt,fpr)
+   
+document.getElementById("val").appendChild(fdiv)
+
+  }
+}
+  
+})
 input.setAttribute("placeholder","Use coupons")
-tmp.append(h2,p1,p2,p3,p4,p5,input,cout);
-document.getElementById("box-2").append(tmp)
+tmp.append(h2,pd1,pd2,pd3,pd4,pd5,input,cout);
+tmp.setAttribute("id","item")
+document.getElementById("box-2").append(tmp);
+
 
 }
+
+
+// function discount(){
+
+// }
 }
+

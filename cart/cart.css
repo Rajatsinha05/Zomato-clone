@@ -19,6 +19,9 @@
 
 #food{
     width: 100px;
+    height: 100px;
+    /* border-radius: 1150px 130px 130px 190px; */
+     border-radius: 130px;;
    
  
 }
@@ -120,12 +123,14 @@ body{
 }
 
 #odr{
-    text-align: center;
+    text-align: center!important;
     background-color:rgb(247, 93, 93);
 /* padding:3px; */
 /* padding-top: 0.1px;;
 padding-bottom: 0.1px;; */
 margin-right: 9px;
+padding-left: 25px;
+margin-bottom: 14px;
 }
 #odr:hover{
    background-color: green;
@@ -136,4 +141,28 @@ margin-right: 9px;
 }
 input{
     outline:none;
+    width: 80%;
+    height:20px;
+    margin: 10px;;
+    padding: 5px;;
+    color: black;
+    bottom:none;
+    border: 1px solid grey
+}
+input::placeholder{
+    color: black;
+    font-size:15px;
+}
+
+#box-2 p{
+
+font-size: 16px;
+padding-left: 25px;
+
+}
+
+#item div{
+    display: flex;
+    justify-content:space-between;
+    padding-right: 30px;
 }
