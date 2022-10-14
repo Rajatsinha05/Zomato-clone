@@ -462,6 +462,8 @@ body::-webkit-scrollbar-thumb {
 	box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
 	border-radius: 8px;
 	padding: 0% 0%;
+	width: 85%;
+	/* margin: auto; */
 }
 
 #location {
@@ -472,7 +474,7 @@ body::-webkit-scrollbar-thumb {
 	width: 95%;
 	/* flex: 2; */
 	/* background-color: #F8F8F8; */
-	padding: 1% 0%;
+	/* padding: 1% 0%; */
 	border-right: 2px solid #cfcfcf;
 }
 
@@ -491,6 +493,8 @@ body::-webkit-scrollbar-thumb {
 
 #userNameNav {
 	margin-bottom: 0px;
+	font-weight: 500;
+    font-size: large;
 }
 
 #navbarSectionSecond {
@@ -1298,6 +1302,21 @@ button[type="submit"]{
 	margin: auto;
 }
 
+#cartSection{
+	padding: 5px 10px;
+	margin: auto 5px;
+	border: 1px solid #C82941;
+	font-size: larger;
+	/* background-color:  */
+	color: #C82941;;
+	border-radius: 8px;
+}
+
+#cartSection:hover{
+	background-color:#C82941 ;
+	color: white;
+}
+
 /* ResponsiveNess */
 
 @media screen and (max-width: 1000px) {
@@ -1314,6 +1333,13 @@ button[type="submit"]{
 		font-size: 18px;
 	}
 	#navbarSectionFirst #locationAndSearch {
+		display: none;
+
+	}
+	#locationAndSearch{
+		margin: auto;
+	}
+	#cartText{
 		display: none;
 	}
 	#foodNavbar {

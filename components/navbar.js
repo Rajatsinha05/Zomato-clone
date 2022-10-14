@@ -26,6 +26,9 @@ const navbar = ()=>{
 </div>
 </div>
 <div id="navbarSectionSecond">
+    <div id="cartSection">
+    <i class="fa-solid fa-cart-shopping"></i> <span id="cartText">Cart<span>
+    </div>
     <img src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg" id="userImage"alt="">
     <p id="userNameNav">
         User
@@ -35,6 +38,7 @@ const navbar = ()=>{
         <p id="profileSection">Profile</p>
         <p>LogOut</p>
     </div>
+   
 </div>
 
 </nav>
