@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./zomato.jpeg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<title>Zomato</title>
+</head>
+
+<body>
+    <!-- Header Setion -->
+    <header>
+        <div class="navBar">
+            <div>
+                <h4 id="getTheApp">Get the App</h4>
+            </div>
+            <div id="options">
+                <ul class="rightFloat" id="responsiveNavbarHome">
+                    <!-- <i id="cancelButtonNavbar" class="fa-solid fa-xmark"></i> -->
+                    <img style="display: none;" id="imageInToogleBtn" src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" class="img-fluid" alt="headerImage">
+                    <li>Investor Relations</li>
+                    <li>Add Restaurant</li>
+                    <li>Log in</li>
+                    <li>Sign up</li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+
+        <div class="head">
+            <img class="logo" src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" alt="ZomatoLogo">
+            <h3 id="textBelowZomato">Discover the Best food & drinks in Hyderabad</h3>
+            <div class="search">
+                <div class="search_item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p style="margin-left: 1.3rem;">Hyderabad</p>
+
+                    </label>
+                </div>
+                <div class="search_item">
+                    <i id="search" class="fas fa-search"></i>
+                    <input type="text" class="searchData" placeholder="Search for restaurents, cuisin or a dish" value="">
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- <div class="headerImage">
+            <img src="https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png" class="img-fluid" alt="headerImage">
+        </div> -->
+
+    </header>
+    <!-- Section 1 -->
+    <section class="section_1">
+        <div class="section_1_item">
+            <div class="item-details">
+                <p style="font-size: 25px; font-weight: bold; color: rgb(70, 67, 67); margin-top: 5px; margin-bottom: -5px;">
+                    Order online</p>
+                <p>Stay home and order to your doorstep</p>
+            </div>
+
+            <img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt="orderonline">
+        </div>
+        </div>
+        <div class="section_1_item">
+            <div class="item-details">
+                <p style="font-size: 25px; font-weight: bold; color: rgb(70, 67, 67); margin-top: 5px; margin-bottom: -5px;">
+                    Dining</p>
+
+                <p style="font-weight: 300; color:rgb(70, 67, 67);  font-family: Okra, Helvetica, sans-serif;">View the city's favourite dining venues</p>
+
+
+            </div>
+            <img src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt="dining">
+
+
+        </div>
+        <div class="section_1_item">
+            <div class="item-details">
+                <p style="font-size: 25px; font-weight: bold; color: rgb(70, 67, 67); margin-top: 5px; margin-bottom: -5px;">
+                    Nightlife and clubs</p>
+                <p style="font-weight: 300; color:rgb(70, 67, 67)">Explore the city's top nightlife</p>
+            </div>
+            <img src="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt="Nightlife and clubs">
+
+        </div>
+        </div>
+    </section>
+    <!-- middle section(section 2) -->
+    <section class="center_section">
+        <div class="section_2">
+            <h2>Collections</h2>
+            <div id="gap">
+                <h6 style="font-size: 20px;">Explore curated lists of top restaurants, cafes, pubs, and bars in Hyderabad, based on trends</h6>
+                <span style="font-size: 20px; margin-left: -5px; margin-top: 5px;">All collections in Hyderabad
+                    &nbsp; <i class="fas fa-caret-right"></i></span>
+            </div>
+        </div>
+        <div class="section_2a">
+            <div class="img_details">
+                <img src="https://b.zmtcdn.com/data/collections/b90996d69bfe8d8c7e36d3a56893df74_1657000323.jpg?output-format=webp" alt="pictiresque">
+                <div id="textOnImage"><span>Picturesque Cafes <br> 17 places</span><i class="fas fa-caret-right"></i>
+                </div>
+            </div>
+            <div class="img_details">
+                <img src="https://b.zmtcdn.com/data/collections/49a6f1f89106fa09c5c287ed6a7511af_1656936838.jpg?output-format=webp" alt="">
+                <div id="textOnImage"><span>Legendery Places <br> 24 places</span><i class="fas fa-caret-right"></i>
+                </div>
+            </div>
+            <div class="img_details">
+                <img src="https://b.zmtcdn.com/data/collections/84b4804b88ed17fd5d11a9e09931077d_1656933762.jpg?output-format=webp" alt="ThemedDining">
+                <div id="textOnImage"><span>Themed Dining <br> 7 places</span><i class="fas fa-caret-right"></i></div>
+            </div>
+            <div class="img_details">
+                <img src="https://b.zmtcdn.com/data/collections/1ef2df5d2d43a974efa2622b99673a47_1657170762.jpg?output-format=webp" alt="Familytime">
+                <div id="textOnImage"><span>Family Time <br> 19 places</span><i class="fas fa-caret-right"></i></div>
+            </div>
+        </div>
+        <h1 id="popularText">Popular localities in and around Hyderabad</h1>
+        <div class="section_2b">
+            <div class="locations">
+                <div>
+                    <span>Jubilee Hills
+                        <p>
+                            277places
+                        </p>
+                    </span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+            </div>
+            <div class="locations">
+                <div>
+                    <span>Gachibowli
+                        <p>
+                            472places
+                        </p>
+                    </span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+            </div>
+            <div class="locations">
+                <div>
+                    <span>Banjara Hills
+                        <p>
+                            323places
+                        </p>
+                    </span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+            </div>
+            <div class="locations">
+                <div>
+                    <span>Hitech City
+                        <p>
+                            224places
+                        </p>
+                    </span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+            </div>
+            <div class="locations">
+                <div>
+                    <span>Madhapur
+                        <p>
+                            523places
+                        </p>
+                    </span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+            </div>
+            <div class="locations">
+                <div>
+                    <span>Kondapur
+                        <p>
+                            323places
+                        </p>
+                    </span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+            </div>
+            <div class="locations">
+                <div>
+                    <span>Kukatpally
+                        <p>
+                            892places
+                        </p>
+                    </span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+            </div>
+            <div class="locations">
+                <div>
+                    <span>
+                        Begumpet
+                        <p>
+                            115places
+                        </p>
+                    </span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+            </div>
+            <div class="locations">
+                <div style="align-items: center" ;>
+                    <span>see more</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- section-3 -->
+    <section class="section_3 ">
+        <div class="flex contact">
+            <img src="https://b.zmtcdn.com/data/o2_assets/a500ffc2ab483bc6a550aa635f4e55531648107832.png " alt="mobileapppic">
+            <div class="address">
+                <h2>Get the Zomato app</h2>
+                <p>We will send you a link, open it on your phone to download the <br>app</p>
+                <div class="flex radio">
+                    <div style="display: flex;">
+                        <input type="radio" name="fill " id="email" checked>
+                        <label for="email ">Email</label>
+                    </div>
+                    <div style="display:flex;">
+                        <input type="radio" name="fill " id="phone">
+                        <label for="phone ">Phone</label>
+                    </div>
+                </div>
+                <div class="flex email">
+                    <input type="text " class="input" placeholder="Email" value="">
+                    <!-- <label for=" " class="place ">Email</label> -->
+                    <button>Share App Link</button>
+
+                </div>
+                <p class="download">Download App</p>
+                <div class="flex app">
+                    <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png " alt="googleplaystore ">
+                    <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png " alt="appstore ">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- section-4 -->
+    <section class="center_section">
+        <h1>Explore options near me</h1>
+        <details>
+            <summary>Popular cuisines near me</summary>
+            <div>
+                <p>Andhra food near me <i class="fas fa-circle"></i> Bakery food near me <i class="fas fa-circle"></i> Beverages food near me <i class="fas fa-circle"></i> Biryani food near me <i class="fas fa-circle"></i> </p>
+
+            </div>
+        </details>
+        <details>
+            <summary>Popular restaurant types near me</summary>
+            <div>
+                <p>
+
+                </p>
+            </div>
+        </details>
+        <details>
+            <summary>Top Restaurant Chains</summary>
+            <div>
+                <p>
+
+                </p>
+            </div>
+        </details>
+        <details>
+            <summary>Cities We Deliver To</summary>
+            <div>
+                <p>
+
+                </p>
+            </div>
+        </details>
+    </section>
+    <!-- section -5 -- footer -->
+    <section id="footer">
+        <div class="section5">
+            <div class="first">
+                <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*" alt="zomato png">
+                <div class="first_1a">
+                    <div>
+                        <img src="https://i.pinimg.com/originals/af/60/9d/af609d4147b4f80f2f3cd769e74463dd.png" alt="india">India
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div id="englishLogo">
+                        <i id="globeLogo" class="fa-solid fa-globe"></i>English<i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="second">
+                <div>
+                    <h4>ABOUT ZOMATO</h4>
+                    <a href="">WHo We Are</a>
+                    <a href="">Blog</a>
+                    <a href="">Work With Us</a>
+                    <a href="">Investor Relations</a>
+                    <a href="">Report Fraud</a>
+                    <a href="">Contact Us</a>
+                </div>
+                <div>
+                    <h4>Zomaverse</h4>
+                    <a href="">Zomato</a>
+                    <a href="">Feeding India</a>
+                    <a href="">HyperPure</a>
+                    <a href="">Zomaland</a>
+
+                </div>
+                <div>
+                    <h4>FOR RESTAURANTS</h4>
+                    <a href="">Patner With US</a>
+                    <a href="">Apps For Us</a>
+                    <div>
+                        <h4 style="font-weight: 500px;">FOR ENTERPRISES</h4>
+                        <a href="">Zomato For Work</a>
+
+                    </div>
+
+                </div>
+                <div>
+                    <h4>LEARN MORE</h4>
+                    <a href="">Privacy</a>
+                    <a href="">Security</a>
+                    <a href="">Terms</a>
+                    <a href="">Sitemap</a>
+
+                </div>
+                <div class="social">
+                    <h4 id="socialLinks">Social Links</h4>
+                    <div>
+                        <i id="socialMediaIcons" class="fab fa-facebook-f"></i>
+                        <i id="socialMediaIcons" class="fab fa-twitter"></i>
+                        <i id="socialMediaIcons" class="fab fa-instagram"></i>
+                        <i id="socialMediaIcons" class="fab fa-linkedin"></i>
+                        <i id="socialMediaIcons" class="fab fa-youtube"></i>
+                    </div>
+                    <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="googleplay">
+                    <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="appstore">
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <p class="third">&copy;By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd. All rights reserved.</p>
+</body>
+
+
+</html>
+<script>
+    let flag = true;
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".rightFloat");
+    hamburger.addEventListener("click", () => {
+        if (flag) {
+            document.getElementById("imageInToogleBtn").style.display = "block";
+            document.querySelector("body").style.overflow = "hidden"
+            flag = false;
+        } else {
+            document.getElementById("imageInToogleBtn").style.display = "none";
+            document.querySelector("body").style.overflow = "auto"
+
+            flag = true;
+        }
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        // document.getElementById("imageInToogleBtn").style.display = "none";
+    })
+    document.querySelectorAll(".rightFloat li").forEach(n => n.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+        document.getElementById("imageInToogleBtn").style.display = "none";
+    }))
+
+    // document.getElementById("cancelButtonNavbar").addEventListener("click", closeNavbarSection);
+
+    // function closeNavbarSection() {
+    //     if (document.getElementById("responsiveNavbarHome").style.display != "none") {
+    //         document.getElementById("responsiveNavbarHome").style.display = "none"
+
+    //     }
+    // }
+</script>
