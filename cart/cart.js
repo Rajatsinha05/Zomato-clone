@@ -164,7 +164,23 @@ price(total)
 
 
 
-//   addddd
+//   addddd................................................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   const add = (h2, ele, td4) => {
     let val = h2.innerText;
     let cr = h2.dataset.qty;
@@ -186,9 +202,16 @@ price(total)
 
    let pri=localStorage.getItem('price')
 
-  parseInt(pri);
-pri+=(Number(ele.price)*cr);
-console.log(pri);
+
+
+
+//    Number(pri);
+//    parseInt(pri)
+//    console.log("tpe",typeof(pri));
+// console.log(pri+6);
+//   parseInt(pri);
+pri+=(Number(ele.price));
+// console.log(`pri ${pri}`);
 
 price(pri)
 
@@ -205,6 +228,12 @@ price(pri)
   };
   
   
+
+
+
+
+
+
 
 
 
@@ -264,67 +293,6 @@ get(fooddata);
 
 
 
-
-
-// const add = (h2, ele, td4) => {
-//   let val = h2.innerText;
-//   let cr = h2.dataset.qty;
-
-//   Number(cr);
-
-//   cr++;
-
-//   h2.innerText = cr;
-//   h2.dataset.qty = cr;
-//   let p = ele.price;
-//   console.log(p);
-//   Number(p);
-//   p = p * cr;
-
-//   td4.innerText = `₹ ${p}`;
-
-//   h2.setAttribute("data-qty", cr);
-
-//   console.log("t",total);
-// };
-
-
-
-
-
-
-
-
-
-
-
-
-// const remove = (h2, ele, td4, idx) => {
-//   let val = h2.innerText;
-//   let cr = h2.dataset.qty;
-
-//   Number(cr);
-
-//   cr--;
-
-//   if (cr <= 0) {
-//     del(ele, idx);
-//     return;
-//   }
-
-//   h2.innerText = cr;
-//   h2.dataset.qty = cr;
-//   let p = ele.price;
-// //   console.log(p);
-//   Number(p);
-//   p = p * cr;
-
-//   td4.innerText = `₹ ${p}`;
-
-//   h2.setAttribute("data-qty", cr);
-
-//   console.log(h2.dataset);
-// };
 
 
 
@@ -444,7 +412,7 @@ if(e.key =="Enter"){
 
 
    let fdiv=document.createElement("div")
-
+fdiv.setAttribute("id", "price")
 
    let fpr= document.createElement("h3");
 
@@ -452,18 +420,22 @@ if(e.key =="Enter"){
   //  let gt=total+20+10+2;
    fpr.innerText=` ₹${value}.00`
    let ftxt=document.createElement("h3")
-   ftxt.innerText=`Final Total`
+   ftxt.innerText=`Total`
    fdiv.append(ftxt,fpr)
    
-document.getElementById("val").appendChild(fdiv)
+document.getElementById("dis").append(fdiv)
 
   }
 }
   
 })
 input.setAttribute("placeholder","Use coupons")
-tmp.append(h2,pd1,pd2,pd3,pd4,pd5,input,cout);
+var ft=document.createElement("div")
+ft.setAttribute("id","dis")
+tmp.append(h2,pd1,pd2,pd3,pd4,pd5,input,ft,cout);
 tmp.setAttribute("id","item")
+
+
 document.getElementById("box-2").append(tmp);
 
 
@@ -474,4 +446,6 @@ document.getElementById("box-2").append(tmp);
 
 // }
 }
+
+
 

@@ -65,10 +65,7 @@ cursor: pointer;
         padding: 5%;
     }
 
-    #parent-box>div:first-of-type{
-        /* border: 1px solid rgb(14, 11, 220); */
-    }
-
+  
 
 .fa-trash-can:hover{
     color: red;
@@ -90,10 +87,6 @@ cursor: pointer;
     border: 1px solid rgb(155, 27, 235)!important;
 } */
 
-#row{
-    /* border: 1px solid rgb(167, 164, 164)!important; */
-    /* border: 0.1px solid rgb(167, 164, 164); */
-}
 
 hr{
     width: 100%;
@@ -124,13 +117,15 @@ body{
 
 #odr{
     text-align: center!important;
-    background-color:rgb(247, 93, 93);
+    background-color: rgb(230, 63, 63);
+    color: white;
 /* padding:3px; */
 /* padding-top: 0.1px;;
 padding-bottom: 0.1px;; */
 margin-right: 9px;
 padding-left: 25px;
 margin-bottom: 14px;
+padding-left: 80px;
 }
 #odr:hover{
    background-color: green;
@@ -141,13 +136,14 @@ margin-bottom: 14px;
 }
 input{
     outline:none;
-    width: 80%;
+    width: 90%;
     height:20px;
     margin: 10px;;
     padding: 5px;;
     color: black;
     bottom:none;
-    border: 1px solid grey
+    border: 1px solid grey;
+    font-size: 20px
 }
 input::placeholder{
     color: black;
@@ -165,4 +161,81 @@ padding-left: 25px;
     display: flex;
     justify-content:space-between;
     padding-right: 30px;
+}
+
+#price{
+/* border: 1px solid black; */
+    display: flex;
+    gap:200px;
+    padding:10px;
+}
+
+
+
+
+
+
+/* responsive................ */
+
+/* medum */
+
+
+
+@media only screen and (min-width: 421px) and (max-width: 720px) {
+
+
+
+
+
+#parent-box{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+#box-2{
+    width: 83%;
+}
+
+#box-1{
+    width: 87%;   
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* small size */
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+
+    #parent-box{
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+    }
+    #box-2{
+        width: 87%;
+    }
+
+    #box-1{
+        width: 87%;   
+    }
+    
+
+
+
 }
