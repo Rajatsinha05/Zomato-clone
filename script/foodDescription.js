@@ -82,7 +82,8 @@ let addToCart=(ele)=>{
         alert.style.display="none";
         
     }, 1500);
-    
+    let arr = JSON.parse(localStorage.getItem("cartProducts"))||[]
+    document.getElementById("badgeNumber").innerText= arr.length;
 }
 
 
