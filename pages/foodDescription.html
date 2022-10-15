@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="icon"
+			href="https://www.apkmirror.com/wp-content/uploads/2017/12/5a46092d7645f-384x384.png"
+			type="image/x-icon"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Catamaran&family=Inter&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+		/>
+		<link rel="stylesheet" href="../style/food.css" />
+		<link rel="stylesheet" href="../style/login&Signup.css">
+
+		<title>Zomato</title>
+		<style></style>
+	</head>
+	<body>
+		<div id="foodNavbar"></div>
+
+		<div id="pathlabel">
+			<pre>Home   /  </pre>
+			<pre>India   /  </pre>
+			<pre>Food Near <span id="cityName1">You</span></pre>
+		</div>
+
+		<div id="showItem">
+
+        </div>
+        <div id="foodDescription">
+            <div id="foodDescriptionHeaders">
+                <h5>
+                    Overview
+                </h5>
+                <h5>
+                    Order Online
+                </h5>
+                <h5>
+                    Reviews
+                </h5>
+                <h5>
+                    Photos
+                </h5>
+                <h5>
+                    Events
+                </h5>
+                <h5>
+                    Book a Table
+                </h5>
+                <h5>
+                    Menu
+                </h5>
+            </div>
+            <div id="foodDescriptionBody">
+                <div>
+
+                    <div id="firstDescriptionDiv">
+                        <h3>About the Place</h3>
+                    <div>
+                        <div>
+                            <img src="https://b.zmtcdn.com/data/o2_assets/fa7443fb81df3ff2c54186672599c3db1585754076.png" alt="">
+                            <div>
+                                <p>Restaurant Saftey Measures</p>
+                                <p>Rider Hand Wash</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://b.zmtcdn.com/data/o2_assets/8ecc61badb80ea685f0afc71a4d721671585754288.png" alt="">
+                            <div>
+                                <p>Restaurant Saftey Measures</p>
+                                <p>Daily Temp Check</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="thirdDescriptionDiv">
+                    <h4>Menu</h4>
+                    <div>
+                    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "groupCells": 1,"pageDots": false,"freeScroll":true,"wrapAround":true,"width":"100%"}'></divclass>
+				
+				
+                        <div id="carouselImg" class="carousel-cell">
+                            <img src="https://b.zmtcdn.com/data/menus/690/18953690/7ff4d4b10f85b155ed2b83706f950716.jpg" alt="">
+                            
+                            
+                        </div>
+                        <div id="carouselImg" class="carousel-cell">
+                            <img src="https://b.zmtcdn.com/data/menus/690/18953690/b125b38c393fd8010163cb9633720fa0.jpg" alt="">
+                            
+                            
+                        </div>
+                        <div id="carouselImg" class="carousel-cell">
+                            <img src="https://b.zmtcdn.com/data/menus/690/18953690/020fefa40bae52e6198d4ef336d2dbab.jpg" alt="">
+                            
+                            
+                            
+                        </div>
+                        <div id="carouselImg" class="carousel-cell">
+                            <img src="https://b.zmtcdn.com/data/menus/690/18953690/fb85d50fcbc874fa428976ed14bc9f60.jpg" alt="">
+                            
+                            
+                            
+                        </div>
+				
+			            </div>
+                        
+                    </div>
+                </div>
+                <div id="secondDescriptionDiv">
+                    <h4>Cusines</h4>
+                    <div>
+                        <p>Fast Food</p>
+                        <p>Sandwich</p>
+                        <p>Shake</p>
+                        <p>Juice</p>
+                        <p>Coffee</p>
+                        <p>Bevarages</p>
+                        <p>Pizza</p>
+                    </div>
+                </div>
+                <div id="fourthDescriptionDiv">
+                    <h4>Popular Dishes</h4>
+                    <p>Cheesy Chicken, Veggie Wrap, Chicken Wrap, Wraps, Rolls, Paratha</p>
+                </div>
+                <div id="fifthDescriptionDiv">
+                    <h4>People Say This Place Is Known For</h4>
+                    <p>Packing, Tasty, Portion, Spicy, Good Food, Price</p>
+                </div>
+                <div id="sixthDescriptionDiv">
+                    <h4>Reviews</h4>
+                    <div>
+                        <div class="reviewDiv">
+                            <div>
+                                <img src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg" id="userImage"alt="">
+                                <p>Rajan</p>
+                                <p>Certified User <i class="fa-sharp fa-solid fa-shield-check"> </i></p>
+
+                            </div>
+                            <div>
+                                Good Food Quality and Fast Delivery
+                            </div>
+                        </div>
+                        <div class="reviewDiv">
+                            <div>
+                                <img src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg" id="userImage"alt="">
+                                <p>Sanjana</p>
+                                <p>Certified User <i class="fa-sharp fa-solid fa-shield-check"></i> </p>
+
+                            </div>
+                            <div>
+                                Food Quality is Up to Mark and Delivery is on Time.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="contactUs">
+                <p>Call</p>
+                <p id="contactNumber">
+                    +91999999999
+                </p>
+                <p>Direction</p>
+                <div class="mapouter"><div class="gmap_canvas"><iframe   id="iframe" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br></div></div>
+                <div id="contactUsButton">
+                    <button><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button><i class="fa-solid fa-diamond-turn-right"></i> Direction</button>
+                </div>
+                <p id="contactNumber">
+                    See all 5 Refections Cafe outlets in <span id="cityName4">Your City</span>
+                </p>
+            </div>
+        </div>
+        <div id="foodYouAlsoLike">
+            <div id="foodLikeCarousel"class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "groupCells": 1,"pageDots": false,"freeScroll":true,"wrapAround":true,"width":"100%"}'>
+
+            </div>
+        </div>
+        <section id="footer">
+            
+        </section>
+		<div id="alert"></div>
+        <div id="UserSIgnUpLogInModal">
+        
+		</div>
+		<script src="../script/foodDescription.js" type="module"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+		<script
+			src="https://kit.fontawesome.com/a103610109.js"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

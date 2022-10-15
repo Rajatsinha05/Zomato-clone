@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="icon"
+			href="https://www.apkmirror.com/wp-content/uploads/2017/12/5a46092d7645f-384x384.png"
+			type="image/x-icon"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Catamaran&family=Inter&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+		/>
+		<link rel="stylesheet" href="../style/food.css" />
+		<link rel="stylesheet" href="../style/login&Signup.css">
+		<!-- <link rel="stylesheet" href="../style/home.css"> -->
+		<title>Zomato</title>
+		<style>#navbarSectionSecond img {
+			width: 22%;
+			border-radius: 50%;
+			margin: auto 1%;
+		}</style>
+	</head>
+	<body>
+		<div id="foodNavbar"></div>
+
+		<div id="pathlabel">
+			<pre>Home   /  </pre>
+			<pre>India   /  </pre>
+			<pre>Food Near <span id="cityName1">You</span></pre>
+		</div>
+
+		<div id="selectionNavbar"></div>
+
+		<div id="filterSection">
+			<div id="multipleFilters">
+				<i class="fa-solid fa-sliders"></i>
+				Filters
+			</div>
+			<div id="ratingH2L">
+				<i class="fa-solid fa-up-down"></i>
+				Rating: High To Low
+			</div>
+			<div id="deliveryH2L">
+				<i class="fa-solid fa-up-down"></i>
+				Delivery: Low To High
+			</div>
+		</div>
+
+		<div id="firstFoodCrousel">
+			<h3 class="foodHeading">Inspiration For Your First Order</h3>
+			<div
+				class="main-carousel"
+				data-flickity='{ "cellAlign": "left", "contain": true, "groupCells": 1,"pageDots": false,"freeScroll":true,"wrapAround":true,"width":"100%"}'
+			>
+				<div class="carousel-cell">
+					<img
+						src="https://b.zmtcdn.com/data/dish_images/ccb7dc2ba2b054419f805da7f05704471634886169.png"
+						alt=""
+					/>
+					<p>Burger</p>
+				</div>
+				<div class="carousel-cell">
+					<img
+						src="https://b.zmtcdn.com/data/dish_images/c2f22c42f7ba90d81440a88449f4e5891634806087.png"
+						alt=""
+					/>
+					<p>Rolls</p>
+				</div>
+				<div class="carousel-cell">
+					<img
+						src="https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png"
+						alt=""
+					/>
+					<p>Pizza</p>
+				</div>
+				<div class="carousel-cell">
+					<img
+						src="https://b.zmtcdn.com/data/o2_assets/52eb9796bb9bcf0eba64c643349e97211634401116.png"
+						alt=""
+					/>
+					<p>Thali</p>
+				</div>
+				<div class="carousel-cell">
+					<img
+						src="https://b.zmtcdn.com/data/dish_images/197987b7ebcd1ee08f8c25ea4e77e20f1634731334.png"
+						alt=""
+					/>
+					<p>Chicken</p>
+				</div>
+				<div class="carousel-cell">
+					<img
+						src="https://b.zmtcdn.com/data/dish_images/c953e5ca07150e9a51f8b21102e20f7e1634805157.png"
+						alt=""
+					/>
+					<p>Chole Bhature</p>
+				</div>
+				<div class="carousel-cell">
+					<img
+						src="https://b.zmtcdn.com/data/dish_images/d19a31d42d5913ff129cafd7cec772f81639737697.png"
+						alt=""
+					/>
+					<p>Biryani</p>
+				</div>
+				<div class="carousel-cell">
+					<img
+						src="https://b.zmtcdn.com/data/dish_images/1437bc204cb5c892cb22d78b4347f4651634827140.png"
+						alt=""
+					/>
+					<p>Chaat</p>
+				</div>
+				<div class="carousel-cell">
+					<img
+						src="https://b.zmtcdn.com/data/dish_images/91c554bcbbab049353a8808fc970e3b31615960315.png"
+						alt=""
+					/>
+					<p>Noodles</p>
+				</div>
+				<div class="carousel-cell">
+					<img
+						src="https://b.zmtcdn.com/data/o2_assets/5dbdb72a48cf3192830232f6853735301632716604.png"
+						alt=""
+					/>
+					<p>Momos</p>
+				</div>
+				<div class="carousel-cell">
+					<img
+						src="https://b.zmtcdn.com/data/o2_assets/13bdf0d4c96d44e6ddb21fedde0fe4081632716661.png"
+						alt=""
+					/>
+					<p>Fries</p>
+				</div>
+			</div>
+		</div>
+		<div id="secondFoodCrousel">
+			<h3 class="foodHeading">Top Brands For You</h3>
+			<div
+				class="main-carousel"
+				data-flickity='{ "cellAlign": "left",  "groupCells": 1,"pageDots": false,"freeScroll":true,"wrapAround":true,"width":"100%"}'
+			>
+				<div class="carousel-cell">
+					<img
+						src="https://b.zmtcdn.com/data/brand_creatives/logos/1a985408ca7ad8fd097f2c47db9c5cb6_1611252699.png?output-format=webp"
+						alt=""
+					/>
+					<p>Domino's Pizza</p>
+				</div>
+				<div class="carousel-cell">
+					<img
+						src="https://b.zmtcdn.com/data/brand_creatives/logos/6a11fd0f30c9fd9ceaff2f5b21f61d23_1617187857.png?output-format=webp"
+						alt=""
+					/>
+					<p>Burger King</p>
+				</div>
+				<div class="carousel-cell">
+					<img
+						src="https://b.zmtcdn.com/data/brand_creatives/logos/396a89cdb1f7a999717b01aa98da7017_1631990846.png?output-format=webp"
+						alt=""
+					/>
+					<p>Subway</p>
+				</div>
+				<div class="carousel-cell">
+					<img
+						src="https://b.zmtcdn.com/data/brand_creatives/logos/1356425eff0c9acd8ab6b0ad351759e4_1611253489.png?output-format=webp"
+						alt=""
+					/>
+					<p>Bikanervala</p>
+				</div>
+				<div class="carousel-cell">
+					<img
+						src="https://b.zmtcdn.com/data/brand_creatives/logos/d46560ce3d7b84605cab233c5abc65f3_1625165852.png?output-format=webp"
+						alt=""
+					/>
+					<p>Pizza Hut</p>
+				</div>
+				<div class="carousel-cell">
+					<img
+						src="https://b.zmtcdn.com/data/brand_creatives/logos/47c22bbd5043ef52b80a4e3d3409a368_1626809684.png?output-format=webp"
+						alt=""
+					/>
+					<p>Behrouz Biryani</p>
+				</div>
+				<div class="carousel-cell">
+					<img
+						src="https://b.zmtcdn.com/data/brand_creatives/logos/ed9718e64b3307ae4aaee0bc81c1ea15_1625155060.png?output-format=webp"
+						alt=""
+					/>
+					<p>Chaayos</p>
+				</div>
+				<div class="carousel-cell">
+					<img
+						src="https://b.zmtcdn.com/data/brand_creatives/logos/bb30587d1148b6ab628a61945f64bf88_1625164768.png?output-format=webp"
+						alt=""
+					/>
+					<p>McDonald's</p>
+				</div>
+
+				<div class="carousel-cell">
+					<img
+						src="https://b.zmtcdn.com/data/brand_creatives/logos/466f8fc74274145f3b21795c3d21816d_1589433692.png?output-format=webp"
+						alt=""
+					/>
+					<p>KFC</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="foodPageContainer">
+			<h3 class="foodHeading">Order food online in <span id="cityName2">Your City</span></h3>
+
+			<div class="itemsContainer"></div>
+			<div id="noDataFound">
+				<img
+					src="http://www.yanncrozet.com/wp-content/uploads/2018/12/Ingredients_Anim_FT.gif"
+					alt=""
+				/>
+				<h1 id="noFoodHeading">No Food Found</h1>
+			</div>
+		</div>
+
+		<section id="footer">
+
+		</section>
+	
+
+		<div id="alert"></div>
+		<div id="UserSIgnUpLogInModal">
+        
+		</div>
+		<script src="../script/food.js" type="module"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+		<script
+			src="https://kit.fontawesome.com/a103610109.js"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
