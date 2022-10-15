@@ -97,7 +97,7 @@ const get = (data) => {
     img.setAttribute("id", "food");
     td1.setAttribute("class", "food");
 
-    td2.innerText = `₹${ele.price}`;
+    td2.innerText = `₹ ${ele.price}`;
 total+=Number(ele.price)
 
 
@@ -127,7 +127,7 @@ total+=Number(ele.price)
     td3.append(boxes);
 
     boxes.setAttribute("id", "quantity");
-    td4.innerText = `₹${ele.price}`;
+    td4.innerText = `₹ ${ele.price}`;
 
     td5.innerHTML = `<i class="fa-regular fa-trash-can"></i>`;
 
@@ -201,19 +201,22 @@ price(total)
 
 
    let pri=localStorage.getItem('price')
+pri-=0;
+console.log(typeof(pri));
 
+pri+= Number(ele.price)*(cr-1)
 
-
-
+console.log(pri)
+price(pri)
 //    Number(pri);
 //    parseInt(pri)
 //    console.log("tpe",typeof(pri));
 // console.log(pri+6);
 //   parseInt(pri);
-pri+=(Number(ele.price));
-// console.log(`pri ${pri}`);
+// pri+=(Number(ele.price));
+// // console.log(`pri ${pri}`);
 
-price(pri)
+// price(pri)
 
 
 
@@ -333,14 +336,14 @@ pd1.append(p1,p11);
 // ₹ ${total}.00
 let p2= document.createElement("p");
 let p22= document.createElement("p");
-p22.innerText=`₹20.00`
+p22.innerText=`₹ 20.00`
 
 p2.innerText=`Delivary charges ` 
 pd2.append(p2,p22)
 
 let p3= document.createElement("p");
 let p33= document.createElement("p");
-p33.innerText=`₹10.00`
+p33.innerText=`₹ 10.00`
 
 
 p3.innerText=`Govt.taxes ` 
@@ -348,7 +351,7 @@ pd3.append(p3,p33)
 let p4= document.createElement("p");
 
 let p44= document.createElement("p");
-p44.innerText=`₹2.00`
+p44.innerText=`₹ 2.00`
 p4.innerText=`Feeding India donation ` 
 pd4.append(p4,p44)
 let p5= document.createElement("h3");
@@ -356,7 +359,7 @@ let p55= document.createElement("h3");
 
 
 let gt=total+20+10+2;
-p55.innerText=` ₹${gt}.00`
+p55.innerText=` ₹ ${gt}.00`
 
 p5.innerText=`Grand Total`
 pd5.append(p5,p55)
@@ -418,7 +421,7 @@ fdiv.setAttribute("id", "price")
 
 
   //  let gt=total+20+10+2;
-   fpr.innerText=` ₹${value}.00`
+   fpr.innerText=` ₹ ${value}.00`
    let ftxt=document.createElement("h3")
    ftxt.innerText=`Total`
    fdiv.append(ftxt,fpr)
