@@ -476,7 +476,7 @@ function showLoginNavbar(){
     setTimeout(() => {
         
         document.querySelector("#profileSection").addEventListener("click",()=>{
-            window.location.href="profile.html"
+            window.location.href="./pages/profile.html"
         })
 
         document.getElementById("userNameNav").innerText=login.name;

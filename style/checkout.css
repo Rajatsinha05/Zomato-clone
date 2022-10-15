@@ -168,7 +168,7 @@ form input:last-child{
 #addressBox {
     display: flex;
     margin: 0 0 20px 25px;
-    padding: 35px 40px 39px;
+    /* padding: 35px 40px 39px; */
     /* border: 1px solid blue; */
 }
 
@@ -223,7 +223,7 @@ form input:last-child{
 
 #paymentBox {
     margin: 0 0 20px 25px;
-    padding: 35px 40px 39px;
+    /* padding: 35px 40px 39px; */
     /* border: 1px solid blue; */
 }
 
@@ -248,9 +248,10 @@ form input:last-child{
     padding-bottom: 0;
     /* align-items: center; */
     color: white;
-    background-color: green;
+    background-color: #E03546;
     display: grid;
     align-items: center;
+
 }
 
 #rightSideUpperBoxForCartDiv2 {
@@ -567,6 +568,7 @@ form input:last-child{
 
 #paymentHeading {
     font-size: 1.3rem;
+    margin-top: 1%;
     font-weight: 600;
     color: #282c3f;
 }
@@ -1095,7 +1097,7 @@ body::-webkit-scrollbar-thumb {
 	border-radius: 8px;
 	/* background-color: darkgrey; */
 	/* width: 5px; */
-	background-color: green;
+	background-color: #E03546;
 	/* outline: 1px solid slategrey; */
 }
 
@@ -1114,6 +1116,6 @@ body::-webkit-scrollbar-thumb {
 	/* border-radius: 8px; */
 	/* background-color: darkgrey; */
 	/* width: 5px; */
-	background-color: red;
+	background-color: #E03546;
 	/* outline: 1px solid slategrey; */
 }

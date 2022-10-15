@@ -322,7 +322,16 @@ form> label{
 }
 
 
+#signUpLink{
+    cursor: pointer;
+}
+#logInLink{
+    cursor: pointer;
+}
 
+label[for="iAgree"]{
+    font-size: 15px;
+}
 
 
 
