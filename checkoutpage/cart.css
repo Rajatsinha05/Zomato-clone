@@ -74,7 +74,7 @@
   }
 
   .productDiv>div:last-child{
-    /* background-color:  */
+    /* background-color */
     color: black;
   }
 
@@ -82,6 +82,14 @@
     margin-left: 5%;
     color: #DB3542;
   }
+
+  
+  .productDiv i:hover{
+
+    color: #DB3542;
+  }
+
+
   .productDiv img {
     width: 55px;
     height: 55px;

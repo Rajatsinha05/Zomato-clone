@@ -248,7 +248,7 @@ form input:last-child{
     padding-bottom: 0;
     /* align-items: center; */
     color: white;
-    background-color: #DB3542;
+    background-color: green;
     display: grid;
     align-items: center;
 }
@@ -408,7 +408,7 @@ form input:last-child{
 
 #couponDiv>button {
     width: 100%;
-    background-color: #DB3542;
+    background-color: green;
     border: none;
     outline: none;
     cursor: pointer;
@@ -1093,10 +1093,10 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
 	border-radius: 8px;
-	background-color: darkgrey;
+	/* background-color: darkgrey; */
 	/* width: 5px; */
-	background-color: #e03546;
-	outline: 1px solid slategrey;
+	background-color: green;
+	/* outline: 1px solid slategrey; */
 }
 
 
@@ -1112,8 +1112,8 @@ body::-webkit-scrollbar-thumb {
 
 #rightSideUpperBoxForCartDiv2::-webkit-scrollbar-thumb {
 	/* border-radius: 8px; */
-	background-color: darkgrey;
+	/* background-color: darkgrey; */
 	/* width: 5px; */
-	background-color: #e03546;
-	outline: 1px solid slategrey;
+	background-color: red;
+	/* outline: 1px solid slategrey; */
 }
