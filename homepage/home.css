@@ -377,13 +377,14 @@ cursor: pointer;
 }
 
 .section_2b {
-    /* border: 2px solid black; */
-    display: grid;
-    grid-column-gap: 20px;
-    grid-row-gap: 30px;
-    /* grid-template-columns: 350px 350px 350px; */
-    /* grid-template-rows: auto; */
-    grid-template-columns: repeat(3, 1fr);
+        /* border: 2px solid black; */
+        display: grid;
+        grid-column-gap: 20px;
+        grid-row-gap: 30px;
+        /* grid-template-columns: 350px 350px 350px; */
+        /* grid-template-rows: auto; */
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 3%;
 }
 
 .locations {
@@ -434,10 +435,10 @@ margin-top: -3px; */
 /* section-3 */
 
 .section_3 {
-    /* border: 1px solid red; */
     display: flex;
     margin-bottom: 100px;
-    padding: 40px 0;
+    margin-top: 10%;
+    padding: 40px 0px;
     background-color: rgb(235, 235, 235);
     justify-content: center;
 }
@@ -548,8 +549,64 @@ label {
 
 /* section-4 */
 
-.center_section {
-    margin: 100px;
+.section_4 {
+    margin: auto;
+    margin-bottom: 114px;
+    width: 95%;
+}
+
+.section_4 h1 {
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: rgb(31, 31, 31);
+}
+
+details {
+    font-weight: 400;
+    border: 1px solid rgb(232, 232, 232);
+    color: rgb(28, 28, 28);
+    padding: 1.2rem;
+    font-size: 20px;
+    margin-bottom: 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-transform: none;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 16px;
+    color: grey;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.description i{
+    font-size: 0.5rem;
+}
+
+.listBrands {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 20px;
+    color: grey;
+}
+
+.placesPart {
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+
+.listType {
+    list-style: none;
+    cursor: pointer;
+}
+
+.listBottom {
+    list-style: none;
+    cursor: pointer;
 }
 
 
@@ -960,6 +1017,9 @@ body::-webkit-scrollbar-thumb {
 #loginLi{
     width: 10%;
 }
+
+
+
 
 
 
