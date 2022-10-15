@@ -1,0 +1,690 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+#artop{
+    background-image: url("../pages/images/top-1.webp");
+    background-size: 100%;
+}
+#arnav{
+    width: 60%;
+    margin: auto;
+    padding: 0.5%;
+}
+#artopinfo{
+    width: 60%;
+    margin: auto;
+    color: white;
+    margin-top: 10%;
+    font-weight: 200;
+}
+#artop-left h1{
+    font-weight: 500;
+    font-size: 270%;
+}
+#artop-left h3{
+    font-weight: 200;
+    margin-top: 1%;
+}
+#artopbuttondiv{
+    width: 82%;
+    display: flex;
+}
+#artopbuttondiv a{
+    text-decoration: none;
+    color: white;
+}
+.artopbuttons{
+    margin-right: 2%;
+    font-weight: 300;
+    margin-top: 2%;
+    margin-bottom: 20%;
+    background-color: #2781E7;
+    color: white;
+    font-size: 130%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 2%;
+}
+.artopbuttons:hover{
+    background-color: #0c60bf;
+}
+#artopgrey{
+    background-color: #f4f4f4;
+    height: 600px;
+}
+#artopgrey-size{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+}
+#artopgrey-white{
+    width: 80%;
+    background-color: white;
+    padding: 2%;
+    text-align: center;
+    margin-top: -10%;
+    border-radius: 5px;
+}
+#artopgrey-white h1{
+    font-weight: 400;
+    font-size: 250%;
+    margin-top: 2%;
+}
+#artopgrey-white p{
+    font-weight: 380;
+    font-size: 125%;
+    color: grey;
+}
+#topgreyinfo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+}
+.topgreyinfoadj{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+.topgreyinfoadj h3{
+    font-weight: 200;
+    font-size: 150%;
+    margin-left: 2%;
+    color: #363636;
+}
+.topgreyinfoadj > img{
+    width: 5%;
+    height: 5%;
+    margin-left: 10%;
+}
+#whiteaftergreysize{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+#whiteaftergreysize h1{
+    margin: 8% 0 4% 0;
+    font-weight: 400;
+    font-size: 300%;
+}
+#whiteaftergreysize h3{
+    margin: 4% 0 4% 0;
+    font-weight: 300;
+    font-size: 150%;
+    color: #6b6b6b;
+}
+#arfact{
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    gap: 5%;
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+#factbox{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    padding: 5%;
+}
+#factbox > img{
+    margin: 10%;
+    height: 50%;
+    width: auto;
+}#factbox > div{
+    align-content: center;
+    align-items: center;
+}
+#factbox > div >h2{
+    color: #2781E7;
+    font-weight: 300;
+    font-size: 150%;
+}
+#arhowitworks > img {
+    width: 100%;
+
+}
+#howitworksinfo{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: -20%;
+}
+#howitworksinfo h1{
+    font-weight: 400;
+    font-size: 300%;
+    margin-bottom: 5%;
+}
+#howitworkscardbox{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    gap: 5%;
+    margin: auto;
+    margin-bottom: 15%;
+}
+#howitworksbox{
+    background-color: white;
+    padding: 5%;
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#howitworksbox h2{
+    font-weight: 400;
+    margin-bottom: 10%;
+}
+#howitworksbox h3{
+    font-weight: 400;
+    margin-bottom: 10%;
+}
+#howitworksbox p{
+    font-weight: 300;
+    margin-bottom: 10%;
+}
+.pinkcircle{
+    background-color: #FFFCF1;
+    width: 50%;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 10%;
+}
+.pinkcircle img{
+    margin: 10%;
+}
+#greyalreadylisted{
+    background-color: #f4f4f4 ;
+}
+#greyalreadylistedsize{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+#greyalreadylistedsize h1{
+    padding-top: 10% ;
+    font-weight: 400;
+    font-size: 300%;
+}
+#greyalreadylistedsize h3{
+    margin: 2% 0 4% 0;
+    font-weight: 300;
+    font-size: 150%;
+    color: #6b6b6b;
+}
+#alreadylistedinput{
+    display: flex;
+}
+#alreadylistedinput-left{
+    width: 20%;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style:hidden;
+    border-bottom-style: hidden;
+    padding: 2%;
+    margin-bottom: 5%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+#alreadylistedinput-right{
+    width: 80%;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: groove;
+    border-bottom-style: hidden;
+    padding: 2%;
+    margin-bottom: 5%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#arourproductssize{
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;
+}
+#arourproductssize > h1{
+    text-align: center;
+    margin-bottom: 3%;
+}
+#arproductsbox{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2%;
+    margin-bottom: 5%;
+}
+#arproductsboxcard{
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+}
+#arproductsboxcard h1{
+    font-weight: 300;
+}
+#arproductsinfo{
+    padding: 5%;
+}
+#arstartjourney1{
+    width: 60%;
+    margin: auto;
+}
+#arstartjourney1 > img{
+    width: 100%;
+}
+#arstartjourney1info{
+    color: white;
+    margin-top: -25%;
+    padding-left: 3%;
+}
+#arstartjourney1info h1{
+    font-weight: 300;
+    font-size: 300%;
+}
+#arstartjourney1info h3{
+    font-weight: 300;
+    font-size: 130%;
+    margin-top: 2%;
+}
+.getstartedbluebutton{
+    background-color: #2781E7;
+    margin-top: 1%;
+    padding: 1.5%;
+    width: 20%;
+    font-size: 120%;
+    color: white;
+    border-radius: 10px;
+}
+.getstartedbluebutton:hover{
+    background-color:#0c60bf
+}
+#arwhatyougetonsignup-size{
+    width: 60%;
+    margin: auto;
+}
+#arwhatyougetonsignup-size > h1{
+    font-weight: 300;
+    font-size: 300%;
+    text-align: center;
+}
+#arwhatyougetonsignup-size > h3{
+    font-weight: 300;
+    font-size: 150%;
+    color: #6b6b6b;
+    text-align: center;
+}
+#arwhatyougetonsignup-size h3{
+    font-weight: 300;
+    font-size: 150%;
+    color: #6b6b6b;
+}
+#getonsignup{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5%;
+    margin-bottom: 10%;
+}
+.getsignupinfobox{
+    display: flex;
+    margin-top: 10%;
+}
+.getsignupinfobox > div{
+    margin-left: 2%;
+}
+#getonsignup-right{
+    background-image: url("../images/backgroundhshape.webp");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 20%;
+}
+#arfaqsection{
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;
+}
+#arfaqsection h1{
+    padding-top: 10% ;
+    font-weight: 400;
+    font-size: 300%;
+    text-align: center;
+}
+.collapsible {
+  background-color: rgb(255, 255, 255);
+  color: rgb(60, 60, 60);
+  cursor: pointer;
+  padding: 2%;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 3%;
+  font-size: 150%;
+  font-weight: 300;
+}
+.collapsible:after {
+  content: '\002B';
+  color:rgb(20, 20, 20);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 25px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+  font-size: 150%;
+  font-weight: 300;
+}
+#arcontactus{
+    margin-top: 5%;
+}
+#arcontactus > img{
+    width: 100%;
+}
+#arcontactusinfo {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    margin: auto;
+    margin-top: -35%;
+}
+#arcontactus-left{
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+#arcontactus-left h1{
+    font-weight: 300;
+    font-size: 300%;
+}
+#arcontactus-left h3{
+    margin-top: 5%;
+    font-weight: 300;
+    font-size: 200%;
+}
+#arfooter2-right{
+    width: 80%;
+    padding: 5%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: white;
+}
+.contactusbuttonsubmit{
+    background-color:#2781E7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 2%;
+    width: 100%;
+}
+.contactusbuttonsubmit:hover{
+    background-color: #0c60bf;
+}
+
+@media only screen and (min-width: 421px) and (max-width: 720px) {
+    #artopbuttondiv{
+        width: 82%;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }
+    #artopgrey-white h1{
+        font-weight: 400;
+        font-size: 200%;
+        margin-top: 2%;
+    }
+    #artopgrey-white p{
+        font-weight: 300;
+        font-size: 10%;
+        color: grey;
+    }
+    #topgreyinfo{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: auto;
+    }
+    .topgreyinfoadj{
+        display: flex;
+        align-items: center;
+        margin: auto;
+        margin-top: 5%;
+    }
+    .topgreyinfoadj h3{
+        font-weight: 200;
+        font-size: 125%;
+        margin-left: 2%;
+        color: #363636;
+    }
+    .topgreyinfoadj > img{
+        width: 5%;
+        height: 5%;
+        margin-left: 10%;
+    }
+    #arfact{
+        width: 60%;
+        grid-template-columns: repeat(1,100%);
+        margin: auto;
+        display: grid;
+        gap: 5%;
+        margin-top: 5%;
+        margin-bottom: 15%;
+    }
+    #howitworkscardbox{
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        gap: 5%;
+        margin: auto;
+        margin-bottom: 15%;
+    }
+    #greyalreadylistedsize h1{
+        padding-top: 10% ;
+        font-weight: 300;
+        font-size: 200%;
+        margin-top: 30%;
+    }
+    #greyalreadylisted{
+        background-color: #f4f4f4 ;
+        margin-top: 10%;
+    }
+    #arproductsbox{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:2%;
+        margin-bottom: 5%;
+    }
+    #arwhatyougetonsignup-size{
+        width: 60%;
+        margin: auto;
+        margin-top: 10%;
+    }
+    #arwhatyougetonsignup-size > h1{
+        font-weight: 300;
+        font-size: 300%;
+        text-align: center;
+        margin-top: 5%;
+    }
+    #getonsignup{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 5%;
+        margin-bottom: 10%;
+    }
+    #arstartjourney1{
+        width: 90%;
+        margin: auto;
+ 
+    }
+    #arstartjourney1 > img{
+        width: 100%;
+    }
+    #arstartjourney1info{
+        color: white;
+        margin-top: -25%;
+        padding-left: 3%;
+    }
+    #arstartjourney1info h1{
+        font-weight: 300;
+        font-size: 300%;
+    }
+    #arstartjourney1info h3{
+        font-weight: 300;
+        font-size: 100%;
+        margin-top: -2%;
+    }
+    .getstartedbluebutton{
+        width: 90%;
+        margin: auto;
+        background-color: #2781E7;
+        margin-top: 1%;
+        padding: 1.5%;
+        font-size: 120%;
+        color: white;
+        border-radius: 10px;
+        border: none;
+    }
+    #arcontactusinfo {
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: auto;
+        margin-top: -45%;
+    }
+    #arcontactus-left h1{
+        font-weight: 300;
+        font-size: 300%;
+    }
+    #arcontactus-left h3{
+        font-weight: 300;
+        font-size: 100%;
+    }
+
+}
+/* small screens */
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+    #artopbuttondiv{
+        width: 82%;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }
+    #artopgrey-white h1{
+        font-weight: 400;
+        font-size: 150%;
+        margin-top: 2%;
+    }
+    #artopgrey-white p{
+        font-weight: 300;
+        font-size: 10%;
+        color: grey;
+    }
+    #topgreyinfo{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: auto;
+    }
+    .topgreyinfoadj{
+        display: flex;
+        align-items: center;
+        margin: auto;
+        margin-top: 5%;
+    }
+    .topgreyinfoadj h3{
+        font-weight: 200;
+        font-size: 100%;
+        margin-left: 2%;
+        color: #363636;
+    }
+    .topgreyinfoadj > img{
+        width: 5%;
+        height: 5%;
+        margin-left: 10%;
+    }
+    #arfact{
+        width: 60%;
+        grid-template-columns: repeat(1,100%);
+        margin: auto;
+        display: grid;
+        gap: 5%;
+        margin-top: 5%;
+        margin-bottom: 15%;
+    }
+    #howitworkscardbox{
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        gap: 5%;
+        margin: auto;
+        margin-bottom: 15%;
+    }
+    #greyalreadylistedsize h1{
+        padding-top: 10% ;
+        font-weight: 300;
+        font-size: 200%;
+        margin-top: 30%;
+    }
+    #greyalreadylisted{
+        background-color: #f4f4f4 ;
+        margin-top: 10%;
+    }
+    #arproductsbox{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:2%;
+        margin-bottom: 5%;
+    }
+    #arwhatyougetonsignup-size > h1{
+        font-weight: 300;
+        font-size: 300%;
+        text-align: center;
+        margin-top: 5%;
+    }
+    #arstartjourney1{
+        width: 90%;
+        margin: auto;
+ 
+    }
+    #arstartjourney1 > img{
+        width: 100%;
+    }
+    #arstartjourney1info{
+        color: white;
+        margin-top: -25%;
+        padding-left: 3%;
+    }
+    #arstartjourney1info h1{
+        font-weight: 300;
+        font-size: 300%;
+    }
+    #arstartjourney1info h3{
+        font-weight: 300;
+        font-size: 100%;
+        margin-top: -2%;
+    }
+    .getstartedbluebutton{
+        width: 90%;
+        margin: auto;
+        background-color: #2781E7;
+        margin-top: 1%;
+        padding: 1.5%;
+        font-size: 120%;
+        color: white;
+        border-radius: 10px;
+        border: none;
+    }
+}
