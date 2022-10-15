@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-    
+
 </head>
 <body>
     <div id="artop">
@@ -24,8 +24,8 @@
                 <h1>Register your restaurant on Zomato</h1>
                 <h3>and get more customers!</h3>
                 <div id="artopbuttondiv">
-                    <button class="artopbuttons" onclick="">Register Your Restaurant</button>
-                    <button class="artopbuttons" onclick="">Restaurant already listed? Claim now</button>
+                    <button class="artopbuttons" onclick=""><a href="./createarestaurantpage.html">Register Your Restaurant</a></button>
+                    <button class="artopbuttons" onclick=""><a href="./patnerwithus.html">Restaurant already listed? Claim now</a></button>
                 </div>
             </div>
         </div>
@@ -142,8 +142,32 @@
     <div id="arourproducts">
         <div id="arourproductssize">
             <h1>Our Products</h1>
-            <div id="arourproducrsslider">
-                
+            <div id="arproductsbox">
+              <div id="arproductsboxcard">
+                <img src="./images/slider1.svg" alt="" style="width: 100%;">
+                <div id="arproductsinfo">
+                  <h1>Listings</h1>
+                   <h5>A free app that allows you to manage your Zomato listing directly from your smartphone</h5>
+                   <span><h5 style="color:#0c60bf">Learn More</h5></span>
+                </div>
+              </div>
+              <div id="arproductsboxcard">
+                <img src="./images/slider2.svg" alt="" style="width: 100%;">
+                <div id="arproductsinfo">
+                  <h1>Events</h1>
+                   <h5>Partner with us for India’s grandest food & entertainment carnival - “Zomaland”...</h5>
+                   <span><h5 style="color:#0c60bf">Learn More</h5></span>
+                </div>
+              </div>
+              <div id="arproductsboxcard">
+                <img src="./images/slider3.svg" alt="" style="width: 100%;">
+                <div id="arproductsinfo">
+                  <h1>Revpure</h1>
+                   <h5>Supplies fresh and high quality ingredients to restaurant for serving delicious meals...</h5>
+                   <span><h5 style="color:#0c60bf">Learn More</h5></span>
+                </div>
+              </div>
+            </div>
             </div>
         </div>
     </div>
@@ -175,7 +199,9 @@
                         </div>
                     </div>
                 </div>
-                <div id="getonsignup-right"></div>
+                <div id="getonsignup-right">
+                  <img src="./images/backgroundshop.avif" alt="" style="width: 100%;">
+                </div>
             </div>
         </div>
     </div>
@@ -242,6 +268,7 @@
                     <label for="floatingInput">What do you like about the restaurant?</label>
                 </div>
                 <button class="contactusbuttonsubmit">Submit</button>
+                <p style="text-align: center; margin-top:5%;">Restaurant owners can <span style="color:#0c60bf;">add restaurant from here</span></p>
             </div>
         </div>
     </div>
@@ -262,4 +289,4 @@
         } 
       });
     }
-    </script>
+</script>

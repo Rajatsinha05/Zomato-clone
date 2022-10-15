@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+#artop{
+    background-image: url("../images/patnerwithustop.avif");
+    background-size: 100%;
+}
+#arnav{
+    width: 60%;
+    margin: auto;
+    padding: 0.5%;
+}
+#artopinfo{
+    width: 60%;
+    margin: auto;
+    color: white;
+    margin-top: 15%;
+    font-weight: 200;
+    text-align: center;
+}
+#artop-left h1{
+    font-weight: 500;
+    font-size: 270%;
+    margin-top: -15%;
+}
+#artop-left h3{
+    font-weight: 300;
+    font-size: 150%;
+    margin-top: 1%;
+}
+#greyalreadylistedsize{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 5%;
+}
+#alreadylistedinput{
+    display: flex;
+}
+#alreadylistedinput-left{
+    width: 20%;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style:hidden;
+    border-bottom-style: hidden;
+    padding: 2%;
+    margin-bottom: 5%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+#alreadylistedinput-right{
+    width: 80%;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: groove;
+    border-bottom-style: hidden;
+    padding: 2%;
+    margin-bottom: 5%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#psgreytop{
+    margin-top: 3%;
+    background-color: #f1f1f1;
+}
+#pstopgreysize{
+    width: 60%;
+    margin: auto;
+}
+#pstopgreysize h1{
+    font-weight: 400;
+    font-size: 300%;
+    padding-top: 8%;
+}
+#pstopgreysize h3{
+    font-weight: 400;
+    font-size: 150%;
+    padding-top: 3%;
+    color: grey;
+}
+#psfactbox{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3%;
+    margin-top: 3%;
+}
+#psfactcard{
+    margin-top: 10%;
+    background-color: white;
+    padding: 10%;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10%;
+}
