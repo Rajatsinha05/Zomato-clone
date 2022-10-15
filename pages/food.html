@@ -25,7 +25,7 @@
 		/>
 		<link rel="stylesheet" href="../style/food.css" />
 		<link rel="stylesheet" href="../style/login&Signup.css">
-		<!-- <link rel="stylesheet" href="../style/home.css"> -->
+		<link rel="stylesheet" href="../style/cartModalButton.css">
 		<title>Zomato</title>
 		<style>#navbarSectionSecond img {
 			width: 22%;
@@ -233,6 +233,20 @@
 		<section id="footer">
 
 		</section>
+	<div id="popUpCart">
+
+		<div id="cartDivIframe">
+			<i id="closeCartModal" class="fa-solid fa-xmark"></i>
+			<embed src="./cart.html" frameborder="0"></embed>
+		</div>
+
+		
+	</div>
+	<div id="cartModalButton">
+		<i class="fa-solid fa-cart-shopping"></i>
+		<span id="badgeNumber" > 0
+		</span>
+	</div>
 	
 
 		<div id="alert"></div>
@@ -240,6 +254,7 @@
         
 		</div>
 		<script src="../script/food.js" type="module"></script>
+		<script src="../script/cartModalButton.js" type="module"></script>
 		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 		<script
 			src="https://kit.fontawesome.com/a103610109.js"

@@ -7,9 +7,9 @@
   <title>Zomato Cart</title>
   <link rel="stylesheet" href="../style/checkout.css">
   <link rel="stylesheet" href="../style/cart.css">
-  <style>
+  <!-- <style>
       
-        #rightSideUpperBoxForCartDiv2 {
+         #rightSideUpperBoxForCartDiv2 { 
             /* border: 1px solid blue; */
             padding-left: 20px;
             padding-right: 20px;
@@ -87,7 +87,7 @@
     padding-bottom: 0;
     /* align-items: center; */
     color: white;
-    background-color: green;
+    background-color: #E03546;
     display: grid;
     align-items: center;
 }
@@ -144,18 +144,88 @@
 .yesOrNo button{
   width: 50%;
   padding: 3% 0%;
+} 
+
+  </style>  -->
+
+  <style>
+  #rightSideUpperBoxForCartDiv1{
+    background-color: #E03546;
+    position: sticky;
+    top: 0;
+  }
+  #rightSideUpperBoxForCart{
+    height: 100%;
+  }
+  #rightSideUpperBoxForCartDiv2 {
+    /* border: 1px solid blue; */
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+    /* overflow-y: scroll; */
+  }
+
+  #rightSideUpperBoxForCart {
+    /* border: 1px solid red; */
+    background-color: #FFFFFF;
+    /* height: 400px; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
+  #proceedToCheckout{
+  padding: 3% 0%;
+  /* border: 1px solid black; */
+  text-align: center;
+  width: 100%;
+  float: left;
+  margin: auto;
+  margin-top: 4%;
+  color: white;
+  background-color: #E03546;
+  text-decoration: none;
+  font-size: large;
+  /* border-radius: 8px; */
+  margin-bottom: 0px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+
+  
+}
+
+#totalBill{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: white;
+  margin-bottom: 15%;
+}
+
+#totalBill > div{
+  padding: 1% 0%;
+  /* display: flex; */
+  /* align-self: center; */
+  border-radius: 8px;
+
+}
+body{
+  background-color: white;
+}
+
   </style>
 
 </head>
 <body>
+  <div id="navbar">
+
+  </div>
   <div id="rightSideUpperBoxForCart">
     <div id="rightSideUpperBoxForCartDiv1">
         Cart Details
     </div>
     <div id="rightSideUpperBoxForCartDiv2">
         <div id="emptyCart">
-            <img src="./cart_empty.png" alt="">
+            <img src="./images/cart_empty.png" alt="">
             <span>CART IS EMPTY</span>
             <br></br>
             <span>GRAB YOUR MEAL NOW</span>
@@ -166,7 +236,7 @@
                 <input id="promoCodeValue" type="text" placeholder="Enter promo code">
                 <button id="applyPromoCode">Apply</button>
             </div>
-            <hr style="border: .1px solid rgb(210, 208, 208);">
+            
             <div style="padding: 5px;" id="totalBill">
                 <div id="totalBillDiv1">Bill Details</div>
                 <div id="totalBillDiv2">
@@ -178,7 +248,7 @@
                     <div id="deliveryFeeBox"><span id="feeSpan1">₹52</span><span id="feeSpan2">FREE</span></div>
                 </div>
                 
-                <hr width="100%" style="border: .1px solid rgb(210, 208, 208);">
+               
                 <div id="offerDiv">
                     <div id="totalBillOffer">
                         <div>Item Discount</div>
@@ -191,9 +261,9 @@
                     <div><strong class=".totalAmountText">Total Bill</strong></div>
                     <strong class=".totalAmountText"><div id="amountTotal"></div></strong>
                 </div>
-                <hr width="100%" style="border: .1px solid rgb(210, 208, 208);">
+                
             </div>
-            <a href="./checkout.html" id="proceedToCheckout">Proceed To Checkout</a>
+            <a href="./checkout.html" target="_parent" id="proceedToCheckout">Proceed To Checkout</a>
         </div>
     </div>
     <div id="rightSideUpperBoxForCartDiv3Up">

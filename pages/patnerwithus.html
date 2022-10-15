@@ -10,6 +10,8 @@
     <script src='main.js'></script>
     <link rel="stylesheet" href="../style/home.css">
     <link rel="stylesheet" href="../style/login&Signup.css">
+		<link rel="stylesheet" href="../style/cartModalButton.css">
+
 
 
 </head>
@@ -88,7 +90,21 @@
 
     </section>
 
+    <div id="popUpCart">
 
+		<div id="cartDivIframe">
+			<i id="closeCartModal" class="fa-solid fa-xmark"></i>
+			<embed src="./cart.html" frameborder="0"></embed>
+		</div>
+
+		
+	</div>
+	<div id="cartModalButton">
+		<i class="fa-solid fa-cart-shopping"></i>
+		<span id="badgeNumber" > 0
+		</span>
+	</div>
+	
 
 
 
@@ -102,7 +118,7 @@
 
 
 
-
+		<script src="../script/cartModalButton.js" type="module"></script>
     <script
 			src="https://kit.fontawesome.com/a103610109.js"
 			crossorigin="anonymous"

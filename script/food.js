@@ -88,12 +88,15 @@ const appendData =(data,location)=>{
 
 
         mainDiv.append(addToCartDiv,img,time,headDiv1,headDiv2);
+
+        
         mainDiv.addEventListener("mouseover",()=>{
             addToCartDiv.style.display="block";
         })
         mainDiv.addEventListener("mouseout",()=>{
             addToCartDiv.style.display="none";
         })
+
         mainDiv.addEventListener("click",()=>{
             localStorage.setItem("foodShow",JSON.stringify(ele));
             window.location.href="foodDescription.html";
@@ -206,7 +209,7 @@ let addToCart=(ele)=>{
             alert.style.color="white";
             alert.style.backgroundColor="rgb(224, 53, 70)";
             alert.style.border="1px solid rgb(224, 53, 70)";
-            alert.innerHTML=`Wrong Credentials <i class="fa-solid fa-xmark"></i>`;
+            alert.innerHTML=`Already In Cart <i class="fa-solid fa-xmark"></i>`;
         
 
     }
@@ -221,6 +224,10 @@ let addToCart=(ele)=>{
         alert.style.display="none";
         
     }, 1500);
+
+
+    let arr = JSON.parse(localStorage.getItem("cartProducts"))||[]
+    document.getElementById("badgeNumber").innerText= arr.length;
     
 }
 

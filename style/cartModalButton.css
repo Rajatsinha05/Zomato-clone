@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#cartModalButton{
+    /* padding: 2%; */
+    /* border: 1px solid black; */
+    /* width: fit-content; */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-size: 25px;
+    color: white;
+    background-color: #E03546;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    float: right;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#badgeNumber{
+    width: 25px;
+    height: 25px;
+    color: white;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    font-size: large;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#cartDivIframe{
+    /* border: 1px solid black; */
+    border: 8PX;
+    position: fixed;
+    bottom: 12%;
+    right: 35%;
+    width: 30%;
+    /* max-height: 70vh; */
+    height: 80vh;
+    z-index: 25;
+    /* display: none; */
+    float: right;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 13px;
+    animation-name: wipe-cinematic-in;
+    animation-duration: 800ms;
+    animation-timing-function: linear;
+    display: none;
+    /* display: none; */
+}
+
+
+#closeCartModal{
+
+    position: absolute;
+    top: 1%;
+    right: 5%;
+    font-size: x-large;
+    color: white;
+
+
+
+}
+
+
+
+
+  
+
+
+  @keyframes wipe-cinematic-in {
+    0% {
+      clip-path: inset(100% 0 0 100%);
+      right: 10%;
+    }
+    50%{
+        clip-path: inset(95% 0% 0% 95%);
+        right: 25%;
+    }
+    
+    100% {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  
+  [transition-style="in:wipe:cinematic"] {
+     animation-name: wipe-cinematic-in;
+  }
+  
+  
+  
+  
+  
+ 
+#cartDivIframe>embed{
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+
+}
+
+#totalBill{
+    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#popUpCart{
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 50;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+}
+
+
+@media screen and (max-width:1000px) {
+    #cartDivIframe{
+        width: 35%;
+        right: 30%;
+    }
+}
+@media screen and (max-width:850px) {
+    #cartDivIframe{
+        width: 50%;
+        right: 25%;
+    }
+}
+@media screen and (max-width:580px) {
+    #cartDivIframe{
+        width: 70%;
+        right: 15%;
+    }
+}
