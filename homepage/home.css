@@ -522,8 +522,57 @@ label {
 
 /* section-4 */
 
-.center_section {
-    margin: 100px;
+.section_4 {
+    margin-bottom: 114px;
+}
+
+.section_4 h1 {
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: rgb(31, 31, 31);
+}
+
+details {
+    font-weight: 400;
+    border: 1px solid rgb(232, 232, 232);
+    color: rgb(28, 28, 28);
+    padding: 1.2rem;
+    font-size: 20px;
+    margin-bottom: 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-transform: none;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 16px;
+    color: grey;
+    padding: 10px;
+}
+
+.listBrands {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 20px;
+    color: grey;
+}
+
+.placesPart {
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+
+.listType {
+    list-style: none;
+    cursor: pointer;
+}
+
+.listBottom {
+    list-style: none;
+    cursor: pointer;
 }
 
 
