@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+#navcontainer{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#container-left img{
+    width: 80%;
+}
+#creatersinfo{
+    display: grid;
+    width: 70%;
+    margin: auto;
+    grid-template-columns: 1fr 3fr;
+    margin-top: 2%;
+}
+#creatersinfo-left-1{
+    width:90%;
+    background-color: white;
+    padding: 10%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.ccinfo{
+    margin-bottom: 10%;
+}
+#creatersinfo-left-2{
+    width:90%;
+    background-color: white;
+    padding: 10%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin-top: 5%;
+    color: grey;
+}
+#cprestaurantdetails{
+    border: 1px solid grey;
+    padding: 2%;
+    border-radius: 10px;
+    margin-top: 2%;
+}
+#cpinputbox{
+    margin-top: 10px;
+}
+#cpinputbox input{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    height: 50px;
+    padding: 10px;
+}
+.nextbluebutton{
+    width: 100%;
+    margin: auto;
+    margin-top:15px;
+    border: none;
+    background-color: crimson;
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+}
