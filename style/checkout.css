@@ -36,14 +36,30 @@ body {
 }
 
 .popup_content {
-    /* height: 330px; */
+    height: 400px;
     /* width: 500px; */
-    width: 30%;
+    width: 28%;
     background-color: #fff;
     padding: 20px;
     margin-left: -10px;
     border-radius: 10px;
     position: relative;
+    animation-name: address;
+    animation-duration: 800ms;
+    animation-timing-function: linear;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+
+@keyframes address {
+    0%{
+        top: 100%;
+    }
+    100%{
+        top: 20%;
+    }
+    
 }
 
 .popup_content img {
