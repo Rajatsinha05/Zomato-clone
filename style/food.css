@@ -52,9 +52,9 @@ body::-webkit-scrollbar-thumb {
 
 #firstFoodCrousel {
 	margin: auto;
-	margin-top: 0%;
-	padding: 1% 10%;
-	background-color: #f8f8f8;
+    margin-top: 0%;
+    padding: 1% 6%;
+    background-color: #f8f8f8;
 }
 
 #noDataFound {
@@ -72,7 +72,7 @@ body::-webkit-scrollbar-thumb {
 #secondFoodCrousel {
 	margin: auto;
 	margin-top: 3%;
-	padding: 0% 10%;
+	padding: 0% 6%;
 	border-bottom: 1px solid rgb(232, 232, 232);
 	margin-bottom: 1%;
 	/* background-color: #F8F8F8; */
@@ -169,7 +169,7 @@ body::-webkit-scrollbar-thumb {
 #foodPageContainer {
 	/* display: grid;
     justify-content: center; */
-	width: 80%;
+	width: 88%;
 	margin: auto;
 	margin-top: 5%;
 }
@@ -187,7 +187,7 @@ body::-webkit-scrollbar-thumb {
 
 .itemsContainer > div > img {
 	width: 100%;
-	height: 250px;
+	height: 280px;
 	display: block;
 	margin: auto;
 	border-radius: 18px;
@@ -434,7 +434,7 @@ body::-webkit-scrollbar-thumb {
 	padding: 1% 0%;
 }
 #foodNavbar {
-	width: 80%;
+	width: 86%;
 	margin: auto;
 }
 
@@ -557,7 +557,7 @@ body::-webkit-scrollbar-thumb {
 
 #pathlabel {
 	display: flex;
-	width: 80%;
+	width: 86%;
 	margin: auto;
 	margin-top: 1%;
 }
@@ -579,7 +579,7 @@ body::-webkit-scrollbar-thumb {
 #selectionNavbar {
 	display: flex;
 	flex-wrap: wrap;
-	width: 80%;
+	width: 88%;
 	margin: auto;
 	margin-top: 2%;
 }
@@ -656,7 +656,7 @@ body::-webkit-scrollbar-thumb {
 	cursor: pointer;
 }
 #filterSection > div:first-child {
-	margin-left: 10%;
+	margin-left: 6%;
 }
 
 .filterModalBody {
@@ -824,7 +824,7 @@ body::-webkit-scrollbar-thumb {
 }
 .descriptionPhotoDiv > div:first-child > img {
 	width: 100%;
-	height: 380px;
+	height: 425px;
 	filter: brightness(95%);
 	transition: 0.5s all ease-in-out;
 	/* overflow: hidden;  */
@@ -848,7 +848,7 @@ body::-webkit-scrollbar-thumb {
 	background-color: rgb(248, 233, 233);
 }
 .smallPhotosDiv > div > img {
-	width: 220px;
+	width: 233px;
 	height: 187px;
 	filter: brightness(95%);
 	transition: 0.5s all ease-in-out;
@@ -886,7 +886,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #showItem {
-	width: 80%;
+	width: 87%;
 	margin: auto;
 	/* position:static; */
 }
@@ -977,7 +977,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #foodDescription {
-	width: 80%;
+	width: 87%;
 	margin: auto;
 }
 
@@ -1365,7 +1365,7 @@ button[type="submit"]{
     /* padding: 0px 68px; */
     display: flex;
     justify-content: space-between;
-	width: 90%;
+	width: 100%;
 	margin: auto;
 }
 
@@ -1381,7 +1381,7 @@ button[type="submit"]{
     display: flex;
     width: 25%;
     position: absolute;
-    right: 15%;
+    right: 8%;
     justify-content: space-between;
 	align-items: center;
     /* border: 1px solid red; */
@@ -1453,6 +1453,10 @@ path {
     color: rgb(22, 22, 22);
     white-space: nowrap;
     cursor: pointer;
+	/* text-align: center; */
+}
+.social h4{
+	text-align: center;
 }
 
 .second a {
@@ -1480,6 +1484,9 @@ path {
     /* border: 1px solid red; */
     position: relative;
     left: -5%;
+}
+.social >div{
+	margin: auto;
 }
 
 #socialLinks {

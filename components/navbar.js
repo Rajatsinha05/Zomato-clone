@@ -27,7 +27,7 @@ const navbar = ()=>{
 </div>
 <div id="navbarSectionSecond">
     
-    <img src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg" id="userImage"alt="">
+    <img src="https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG.png" id="userImage"alt="">
     <p id="userNameNav">
         User
     </p>

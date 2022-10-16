@@ -153,6 +153,7 @@
     background-color: #E03546;
     position: sticky;
     top: 0;
+    
   }
   #rightSideUpperBoxForCart{
     height: 100%;
@@ -211,6 +212,9 @@
 body{
   background-color: white;
 }
+#couponDivCart{
+ margin-top: 5%;
+}
 
   </style>
 
@@ -236,19 +240,20 @@ body{
                 <input id="promoCodeValue" type="text" placeholder="Enter promo code">
                 <button id="applyPromoCode">Apply</button>
             </div> -->
-            
-            <div style="padding: 5px;" id="totalBill">
+            <div id="couponDivCart">
+
+              <div style="padding: 5px;" id="totalBill">
                 <div id="totalBillDiv1">Bill Details</div>
                 <div id="totalBillDiv2">
-                    <div>Item Total</div>
-                    <div id="ItemTotal"></div>
+                  <div>Item Total</div>
+                  <div id="ItemTotal"></div>
                 </div>
                 <div id="totalBillDiv3">
                     <div>Delivery Fee</div>
                     <div id="deliveryFeeBox"><span id="feeSpan1">₹52</span><span id="feeSpan2">FREE</span></div>
                 </div>
                 
-               
+                
                 <div id="offerDiv">
                     <div id="totalBillOffer">
                         <div>Item Discount</div>
@@ -257,23 +262,24 @@ body{
                     <hr id="offerBlowLine">
                 </div>
                 <div id="totalBillDiv4">
-                    
-                    <div><strong class=".totalAmountText">Total Bill</strong></div>
-                    <strong class=".totalAmountText"><div id="amountTotal"></div></strong>
+                  
+                  <div><strong class=".totalAmountText">Total Bill</strong></div>
+                  <strong class=".totalAmountText"><div id="amountTotal"></div></strong>
                 </div>
                 
+              </div>
+              <a href="./checkout.html" target="_parent" id="proceedToCheckout">Proceed To Checkout</a>
             </div>
-            <a href="./checkout.html" target="_parent" id="proceedToCheckout">Proceed To Checkout</a>
+          </div>
+          <div id="rightSideUpperBoxForCartDiv3Up">
+            <div id="rightSideUpperBoxForCartDiv3">
+              <span>TO PAY</span>
+              <span id="totalPayableAmount"></span>
+            </div>
+          </div>
+          </div>
         </div>
-    </div>
-    <div id="rightSideUpperBoxForCartDiv3Up">
-        <div id="rightSideUpperBoxForCartDiv3">
-            <span>TO PAY</span>
-            <span id="totalPayableAmount"></span>
-        </div>
-    </div>
-</div>
-<script src="../script/cart.js"></script>
+        <script src="../script/cart.js"></script>
 
 
 <script
