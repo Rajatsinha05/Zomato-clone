@@ -17,7 +17,7 @@ h.addEventListener("keypress", async function(event){
                <img src="${elem.img}" id="psimg"/>
                <p>Address-${elem.address}</p>
                <button onclick="claimnowfn()" id="claimbutton">Claim this Restaurant</button></div>`
-               console.log(kjhj);
+            //    console.log(kjhj);
                b=true;
             }
         })
@@ -32,7 +32,7 @@ h.addEventListener("keypress", async function(event){
 })
 
 function claimnowfn(){
-    alert("This restaurant is already claimed by our another user");
+    // alert("This restaurant is already claimed by our another user");
     let alert = document.getElementById("alert");
     alert.style.color="white";
     alert.style.backgroundColor="rgb(224, 53, 70)";

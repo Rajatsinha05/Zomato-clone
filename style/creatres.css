@@ -29,7 +29,7 @@
     display: grid;
     width: 70%;
     margin: auto;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 33% 67%;
     margin-top: 2%;
 }
 #creatersinfo-left-1{
@@ -85,7 +85,7 @@
     background-color: crimson;
     padding: 1%;
     color: white;
-    width: 40%;
+    width: 44%;
     font-weight: 400;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
