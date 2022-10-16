@@ -173,13 +173,12 @@ form input:last-child{
 }
 
 #addresses {
-    width: 699px;
+       /* width: 699px; */
     /* border: 1px solid green; */
     margin-top: 30px;
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr); */
-    gap: 25px;
+    gap: -1px;
     height: fit-content;
+    padding: 5%;
 }
 
 #newAddress {
@@ -189,10 +188,11 @@ form input:last-child{
 
 #showDetails {
     border: 0.5px solid rgb(236, 226, 226);
-    width: 50%;
+    width: 42%;
     display: grid;
     position: relative;
-    margin-top: 90px;
+    margin-top: 121px;
+    margin-bottom: 39px;
     padding: 15px 30px 40px;
     text-align: center;
     font-size: 16px;
@@ -339,7 +339,8 @@ form input:last-child{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 14px;
+    font-size: 18px;
+    padding: 2% 0%;
     font-weight: 300;
 }
 
@@ -1085,7 +1086,7 @@ form input:last-child{
 
 
 body::-webkit-scrollbar {
-	width: 8px;
+	width: 0px;
 }
 
 body::-webkit-scrollbar-track {
@@ -1094,17 +1095,17 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-	border-radius: 8px;
+	border-radius: 0px;
 	/* background-color: darkgrey; */
 	/* width: 5px; */
-	background-color: #E03546;
+	background-color: transparent;
 	/* outline: 1px solid slategrey; */
 }
 
 
 
 #rightSideUpperBoxForCartDiv2::-webkit-scrollbar {
-	width: 8px;
+	width: 0px;
 }
 
 #rightSideUpperBoxForCartDiv2::-webkit-scrollbar-track {
@@ -1116,7 +1117,7 @@ body::-webkit-scrollbar-thumb {
 	/* border-radius: 8px; */
 	/* background-color: darkgrey; */
 	/* width: 5px; */
-	background-color: #E03546;
+	background-color: transparent;
 	/* outline: 1px solid slategrey; */
 }
 

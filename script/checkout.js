@@ -485,6 +485,9 @@ document.querySelector(".paymentBtn").addEventListener("click",()=>{
 })
 
 
+
+
+
 document.getElementById("otpConfirm").addEventListener("submit",()=>{
 
 
@@ -497,23 +500,63 @@ document.getElementById("otpConfirm").addEventListener("submit",()=>{
 
     let otp = input1+input2+input3+input4;
 
+    
+    
+    
+    
+    
     if(otp=="1234"){
-        alert("Correct Otp Suceesfull");
-        localStorage.removeItem("cartProducts");
+        let successUser  = JSON.parse(localStorage.getItem("successUser"))||{};
+        let alert = document.getElementById("alert");
+        alert.style.color="white";
+        alert.style.backgroundColor="green";
+        alert.style.border="1px solid green";
+        alert.innerHTML=`{${successUser.name} Order Confirmed <i class="fa-sharp fa-solid fa-circle-check"></i>`;
+        document.getElementById("UserSIgnUpLogInModal").style.display="none"
+        document.querySelector("body").style.overflow="auto"
         document.getElementById("otpDiv").style.display="none";
         document.getElementById("deliveryImg").style.display="block";
+        alert.style.display="block";
         setTimeout(() => {
-        document.getElementById("deliveryImg").style.display="none";
+            alert.style.display="none";
             location.href="../index.html"
-        }, 4800);
-    
+            localStorage.removeItem("cartProducts");
+            localStorage.removeItem("couponApplied");
+            document.getElementById("deliveryImg").style.display="none";
+            
+        }, 2500);
+        
+        
+
 
     }
     else{
         
-        alert("Enter Correct Otp");
+        let alert = document.getElementById("alert");
+        alert.style.color="white";
+        alert.style.backgroundColor="rgb(224, 53, 70)";
+        alert.style.border="1px solid rgb(224, 53, 70)";
+        alert.innerHTML=`Wrong OTP <i class="fa-solid fa-xmark"></i>`;
+        alert.style.display="block";
+        setTimeout(() => {
+            alert.style.display="none";
+
+            document.getElementById("otpInput1").value="";
+            document.getElementById("otpInput2").value="";
+            document.getElementById("otpInput3").value="";
+            document.getElementById("otpInput4").value="";
+
+            
+        }, 2500);
+        
     }
+    
 
 
 
 })
+
+
+
+
+

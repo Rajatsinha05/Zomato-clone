@@ -17,6 +17,17 @@
         #dropUser{
             top: 6%;
         }
+        #showPayment{
+            padding: 8% 3% 29% 3%;
+            background-color: white;
+            height: max-content;
+            font-size: larger;
+            margin-top: 3%;
+        }
+        #totalBillDiv4{
+            font-size: 20px;
+            color: rgb(65, 60, 60);
+        }
     </style>
 
 </head>
@@ -147,7 +158,7 @@
                                             </div>
                                             <div id="make2InputInSingleRow">
                                                 <div id="validCard" class="cardform">
-                                                    <input type="tel" required id="cardValidity" class="cardform__input" autocomplete="off" placeholder=" ">
+                                                    <input type="tel" required id="cardValidity" class="cardform__input"  autocomplete="off" placeholder=" ">
                                                     <label for="cardValidity" class="cardform__label">Valid through(MM/YY)</label>
                                                 </div>
                                                 <div id="cvvCard" class="cardform">
@@ -248,48 +259,10 @@
                             </div>
                             <div id="divForCartDataUpperDiv">
                                 <div id="divForCartData"></div>
-                                <div id="couponDiv">
-                                    <input id="promoCodeValue" type="text" placeholder="Enter promo code">
-                                    <button id="applyPromoCode">Apply</button>
-                                </div>
-                                <hr style="border: .1px solid rgb(210, 208, 208);">
-                                <div style="padding: 5px;" id="totalBill">
-                                    <div id="totalBillDiv1">Bill Details</div>
-                                    <div id="totalBillDiv2">
-                                        <div>Item Total</div>
-                                        <div id="ItemTotal"></div>
-                                    </div>
-                                    <div id="totalBillDiv3">
-                                        <div>Delivery Fee</div>
-                                        <div id="deliveryFeeBox"><span id="feeSpan1">₹52</span><span id="feeSpan2">FREE</span></div>
-                                    </div>
-                                    
-                                    <hr width="100%" style="border: .1px solid rgb(210, 208, 208);">
-                                    <div id="offerDiv">
-                                        <div id="totalBillOffer">
-                                            <div>Item Discount</div>
-                                            <div id="offByPromo"></div>
-                                        </div>
-                                        <hr id="offerBlowLine">
-                                    </div>
-                                    <div id="totalBillDiv4">
-                                        
-                                        <div><strong>Total Bill</strong></div>
-                                        <strong><div id="amountTotal"></div></strong>
-                                    </div>
-                                    <hr width="100%" style="border: .1px solid rgb(210, 208, 208);">
-                                </div>
-                            </div>
-                        </div>
-                        <div id="rightSideUpperBoxForCartDiv3Up">
-                            <div id="rightSideUpperBoxForCartDiv3">
-                                <span>TO PAY</span>
-                                <span id="totalPayableAmount"></span>
-                            </div>
-                        </div>
+                               
                     </div>
                     <div id="saveMoneyBox">You have saved ₹<span id="savedMoney">52</span> on the bill</div>
-                    <div id="cancellitionPolicyBox">
+                    <!-- <div id="cancellitionPolicyBox">
                         <div id="cancelInnerBox">
                             <h3>Review your order and address details to avoid cancellations</h3>
                             <p><span style="color: red;">Note:</span> If you cancel within 60 seconds of placing your order, a 100% refund will be issued. No refund for cancellations made after 60 seconds.
@@ -300,8 +273,52 @@
                             <div>Read cancellation policy</div>
                             <hr>
                         </div>
-                    </div>
+                    </div> -->
+                    
                 </div>
+                
+            </div>
+            <div id="showPayment">
+
+                <div id="couponDiv">
+                    <input id="promoCodeValue" type="text" placeholder="Enter promo code">
+                <button id="applyPromoCode">Apply</button>
+            </div>
+            <hr style="border: .1px solid rgb(210, 208, 208);">
+            <div style="padding: 5px;" id="totalBill">
+                <div id="totalBillDiv1">Bill Details</div>
+                <div id="totalBillDiv2">
+                    <div>Item Total</div>
+                    <div id="ItemTotal"></div>
+                </div>
+                <div id="totalBillDiv3">
+                    <div>Delivery Fee</div>
+                    <div id="deliveryFeeBox"><span id="feeSpan1">₹52</span><span id="feeSpan2">FREE</span></div>
+                </div>
+                
+                <hr width="100%" style="border: .1px solid rgb(210, 208, 208);">
+                <div id="offerDiv">
+                    <div id="totalBillOffer">
+                        <div>Item Discount</div>
+                        <div id="offByPromo"></div>
+                    </div>
+                    <hr id="offerBlowLine">
+                </div>
+                <div id="totalBillDiv4">
+                    
+                    <div><strong>Total Bill</strong></div>
+                    <strong><div id="amountTotal"></div></strong>
+                </div>
+                <hr width="100%" style="border: .1px solid rgb(210, 208, 208);">
+            </div>
+            </div>
+        </div>
+        <div id="rightSideUpperBoxForCartDiv3Up">
+            <div id="rightSideUpperBoxForCartDiv3">
+                <span>TO PAY</span>
+                <span id="totalPayableAmount"></span>
+            </div>
+        </div>
             </div>
         </div>
 
@@ -317,20 +334,49 @@
         <div id="otpBody">
             <h2 id="otpHead">Enter Your OTP</h2>
             <form id="otpConfirm">
-                <input type="tel" id="otpInput1" oninput="enterInput('otpInput1','otpInput2')">
-                <input type="tel" id="otpInput2" oninput="enterInput('otpInput1','otpInput3')">
-                <input type="tel" id="otpInput3" oninput="enterInput('otpInput2','otpInput4')">
-                <input type="tel" id="otpInput4" oninput="enterInput('otpInput3','otpInput4')">
+                <input type="tel" id="otpInput1" onkeydown="enterInput('otpInput1','otpInput1','otpInput2')" >
+                <input type="tel" id="otpInput2" onkeydown="enterInput('otpInput1','otpInput2','otpInput3')" >
+                <input type="tel" id="otpInput3" onkeydown="enterInput('otpInput2','otpInput3','otpInput4')" >
+                <input type="tel" id="otpInput4" onkeydown="enterInput('otpInput3','otpInput4','otpInput4')" >
 
                 <button type="submit">Submit Otp</button>
             </form>
         </div>
     </div>
+    <div id="alert">
+
+    </div>
 
     <script
 			src="https://kit.fontawesome.com/a103610109.js"
 			crossorigin="anonymous"
-	></script>  
+	></script> 
+    <script>
+        function enterInput(p,c,n){
+            console.log(event.key);
+            if( event.key == "Backspace" ){
+                document.getElementById(c).value="";
+                setTimeout(() => {
+                    
+                    document.getElementById(p).focus();
+                }, 1);
+            }
+            else{
+                setTimeout(() => {
+                    
+                    document.getElementById(n).focus(); 
+                }, 1);
+            }
+           
+            
+            
+
+
+
+
+        }
+        
+    </script> 
 </body>
 
 </html>

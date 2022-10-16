@@ -1016,7 +1016,11 @@ body::-webkit-scrollbar-thumb {
     width: 90%;
     margin: auto;
     /* border: 1px solid black; */
+	/* text-align: center; */
 }
+
+
+
 #footer {
     width: 100%;
 	display: grid;
@@ -1039,19 +1043,25 @@ body::-webkit-scrollbar-thumb {
     /* padding: 0px 68px; */
     display: flex;
     justify-content: space-between;
+	width: 100%;
+	margin: auto;
 }
 
 .first img {
     width: 128px;
     height: 32px;
+	display: block;
+	/* margin: auto; */
+	/* margin-left: 10px; */
 }
 
 .first_1a {
     display: flex;
     width: 25%;
     position: absolute;
-    right: 15%;
+    right: 8%;
     justify-content: space-between;
+	align-items: center;
     /* border: 1px solid red; */
 }
 
@@ -1067,8 +1077,9 @@ body::-webkit-scrollbar-thumb {
 .first_1a div {
     width: 40%;
     margin: auto;
-    /* margin-left: 50px; */
-    /* border: 1px solid black; */
+    margin-left: 50px;
+	display: flex;
+    border: 1px solid black;
 }
 
 .first_1a img {
@@ -1085,8 +1096,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 #globeLogo {
-    /* margin-right: 10px; */
-    /* margin-left: 10px; */
+    margin-right: 10px;
+    margin-left: 10px;
     padding: 8px 0px;
 }
 
@@ -1110,8 +1121,8 @@ path {
     justify-content: center;
 	/* text-align: center; */
     margin: 30px 0;
-    padding: 1%;
 }
+
 
 
 .second h4 {
@@ -1120,6 +1131,10 @@ path {
     color: rgb(22, 22, 22);
     white-space: nowrap;
     cursor: pointer;
+	/* text-align: center; */
+}
+.social h4{
+	text-align: center;
 }
 
 .second a {
@@ -1134,7 +1149,6 @@ path {
 }
 
 
-
 .second img {
     width: 200px;
     height: 60px;
@@ -1147,17 +1161,17 @@ path {
     flex-direction: column;
     /* border: 1px solid red; */
     position: relative;
-    /* left: -5%; */
+    left: -5%;
+}
+.social >div{
+	margin: auto;
 }
 
 #socialLinks {
     margin-bottom: 25px;
 }
 
-.social div {
-    margin-top: -15px;
-    margin-bottom: 15px;
-}
+
 
 
 /* #socialMediaIcons {
@@ -1181,6 +1195,7 @@ path {
     height: 40px;
     object-fit: cover;
     border-radius: 8px;
+	margin: auto;
 }
 
 .section5 hr {
@@ -1192,8 +1207,6 @@ path {
     color: gray;
     font-size: 14px;
 }
-
-
 #userNameNav {
     margin-bottom: 0px;
     font-weight: 500;

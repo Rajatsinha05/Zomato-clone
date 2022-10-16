@@ -187,14 +187,14 @@ function showProductMain() {
   }
   
 
-  document.querySelector("#applyPromoCode").addEventListener("click", applyCoupon);
+  // document.querySelector("#applyPromoCode").addEventListener("click", applyCoupon);
   
-  function applyCoupon() {
-    event.preventDefault();
-    if (document.getElementById("promoCodeValue").value == "Zomato10") {
-      localStorage.setItem("couponApplied", 1);
-    } else {
-      localStorage.setItem("couponApplied", 0);
-    }
-    showProducts(cartProducts);
-  }
+  // function applyCoupon() {
+  //   event.preventDefault();
+  //   if (document.getElementById("promoCodeValue").value == "Zomato10") {
+  //     localStorage.setItem("couponApplied", 1);
+  //   } else {
+  //     localStorage.setItem("couponApplied", 0);
+  //   }
+  //   showProducts(cartProducts);
+  // }
