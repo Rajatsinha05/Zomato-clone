@@ -511,7 +511,7 @@ document.getElementById("otpConfirm").addEventListener("submit",()=>{
         alert.style.color="white";
         alert.style.backgroundColor="green";
         alert.style.border="1px solid green";
-        alert.innerHTML=`{${successUser.name} Order Confirmed <i class="fa-sharp fa-solid fa-circle-check"></i>`;
+        alert.innerHTML=`${successUser.name} Order Confirmed <i class="fa-sharp fa-solid fa-circle-check"></i>`;
         document.getElementById("UserSIgnUpLogInModal").style.display="none"
         document.querySelector("body").style.overflow="auto"
         document.getElementById("otpDiv").style.display="none";
