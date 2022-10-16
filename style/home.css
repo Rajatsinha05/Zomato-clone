@@ -9,7 +9,7 @@ body {
 * {
     margin: 0;
     padding: 0;
-    font-family: Okra, Helvetica, sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 
@@ -103,8 +103,9 @@ header {
     align-items: center;
     border-radius: 10px;
     background: white;
-    padding: 5px 4px;
+    padding: 7px 4px;
     text-align: center;
+    
 }
 
 .search .search_item {
@@ -134,9 +135,12 @@ header {
     width: 200%;
     margin-left: 7px;
     padding-left: 10px;
-    font-size: 20px;
+    font-size: 16px;
     /* margin-left: 5px; */
+    color: grey;
 }
+   
+
 
 .search .search_item:first-child {
     width: 31%;
@@ -926,7 +930,7 @@ body::-webkit-scrollbar-thumb {
 	cursor: pointer;
 	align-items: center;
 	/* justify-content: right; */
-	/* gap: 1%; */
+	gap: 7%;
     width: fit-content;
 }
 #dropUserButton {
@@ -999,6 +1003,11 @@ body::-webkit-scrollbar-thumb {
 .addResturantButton{
     text-decoration: none;
     color: white;
+}
+.addResturantButton:hover{
+    text-decoration: none;
+    color: white;
+    /* transform: scale(1.1); */
 }
 
 .section5{
@@ -1185,7 +1194,12 @@ path {
 }
 
 
-
+#userNameNav {
+    margin-bottom: 0px;
+    font-weight: 500;
+    font-size: larger;
+    
+}
 
 
 @media screen and (max-width:768px) {
