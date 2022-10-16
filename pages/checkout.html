@@ -8,10 +8,21 @@
     <title>Checkout</title>
     <link rel="stylesheet" href="../style/cart.css">
     <link rel="stylesheet" href="../style/checkout.css">
+    <link rel="stylesheet" href="../style/food.css">
+    <link rel="stylesheet" href="../style/login&Signup.css">
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        #dropUser{
+            top: 6%;
+        }
+    </style>
 
 </head>
 
 <body>
+    <div id="foodNavbar"></div>
     <div id="root" style="height: 100%;">
 
         <div id="middlePart">
@@ -57,10 +68,10 @@
 
                     </div>
                     <!-- google map enbed code -->
-                    <div class="mapouter">
+                    <!-- <div class="mapouter">
                         <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                         </div>
-                    </div>
+                    </div> -->
                     <div id="paymentUpperBox">
                         <div id="paymentBox">
                             <div id="paymentHeading">Choose payment method</div>
@@ -131,7 +142,7 @@
                                         </div>
                                         <form id="cardDetailsForm">
                                             <div class="cardform">
-                                                <input type="tel" required id="cardNumber" class="cardform__input" autocomplete="off" placeholder=" ">
+                                                <input type="tel" required id="cardNumber" class="cardform__input" maxlength="16" autocomplete="off" placeholder=" ">
                                                 <label for="cardNumber" class="cardform__label">Card number</label>
                                             </div>
                                             <div id="make2InputInSingleRow">
@@ -299,13 +310,27 @@
     <img src="https://cdn.dribbble.com/users/1447046/screenshots/7813949/media/2e5dcde12e9e661e3931ad3caf77affb.gif" alt="" id="deliveryImg">
 
 
+    <div id="UserSIgnUpLogInModal">
 
+    </div>
+    <div id="otpDiv">
+        <div id="otpBody">
+            <h2 id="otpHead">Enter Your OTP</h2>
+            <form id="otpConfirm">
+                <input type="tel" id="otpInput1" oninput="enterInput('otpInput1','otpInput2')">
+                <input type="tel" id="otpInput2" oninput="enterInput('otpInput1','otpInput3')">
+                <input type="tel" id="otpInput3" oninput="enterInput('otpInput2','otpInput4')">
+                <input type="tel" id="otpInput4" oninput="enterInput('otpInput3','otpInput4')">
 
+                <button type="submit">Submit Otp</button>
+            </form>
+        </div>
+    </div>
 
     <script
 			src="https://kit.fontawesome.com/a103610109.js"
 			crossorigin="anonymous"
-		></script>  
+	></script>  
 </body>
 
 </html>

@@ -504,7 +504,7 @@ document.querySelector("#submitLogIn").addEventListener("submit",fetchingTheData
 
 document.getElementById("logOutBttn").addEventListener("click",()=>{
         localStorage.removeItem("successUser");
-        location.href="index.html";
+        location.href="../index.html";
 })
 
 

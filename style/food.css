@@ -844,7 +844,7 @@ body::-webkit-scrollbar-thumb {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 5px;
-	border: 1px solid pink;
+	/* border: 1px solid pink; */
 	background-color: rgb(248, 233, 233);
 }
 .smallPhotosDiv > div > img {

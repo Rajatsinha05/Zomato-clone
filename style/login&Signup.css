@@ -162,12 +162,14 @@ p{
     margin-bottom: 2%;
     font-size: large;
     outline: none;
+    color: grey;
 }
 #logIn form input{
     padding:3% 1%;
     margin-bottom: 2%;
     font-size: large;
     outline: none;
+    color: grey;
 }
 
 
