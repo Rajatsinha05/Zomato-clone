@@ -162,11 +162,11 @@ let searchFood = localStorage.getItem("foodItem") || true;
 
 if(searchFood){
     
-    fetchDataSupport(url+`_page=1&_limit=20&_sort=rating&_order=asc`);
+    fetchDataSupport(url+`_sort=rating&_order=asc`);
     
 }
 else{
-    fetchDataSupport(url+`q=${searchFood}&_page=1&_limit=20`);
+    fetchDataSupport(url+`q=${searchFood}`);
 }
 
 

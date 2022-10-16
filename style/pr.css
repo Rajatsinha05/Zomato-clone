@@ -50,6 +50,7 @@
     margin-bottom: 5%;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
+    outline: none;
 }
 #alreadylistedinput-right{
     width: 80%;
@@ -61,6 +62,7 @@
     margin-bottom: 5%;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
+    outline: none;
 }
 #psgreytop{
     margin-top: 3%;
@@ -94,4 +96,53 @@
     text-align: center;
     border-radius: 10px;
     margin-bottom: 10%;
+}
+#displaybox{
+    text-align: center;
+}
+#psresname{
+    text-align: center;
+    color: grey;
+    margin-top: 2%;
+}
+#psimg{
+    margin-top: 2%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+#claimbutton{
+    width: 40%;
+    background-color: crimson;
+    color: white;
+    border-radius: 10px;
+    padding: 0.8%;
+    border: none;
+    margin-top: 1%;
+}
+#claimbutton:hover{
+    background-color: rgb(137, 1, 28);
+    
+}
+@media only screen and (min-width: 421px) and (max-width: 720px) {
+    #psfactbox{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3%;
+        margin-top: 3%;
+    }
+    #pstopgreysize{
+        text-align: center;
+    }
+}
+/* small screens */
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+    #psfactbox{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3%;
+        margin-top: 3%;
+    }
+    #pstopgreysize{
+        text-align: center;
+    }
 }

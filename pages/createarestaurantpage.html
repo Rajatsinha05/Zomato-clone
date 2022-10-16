@@ -12,10 +12,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     
-    <script src='main.js'></script>
+    <script defer src='../script/createres.js'></script>
 </head>
 <body>
-    
+    <div id="navbar">
+        <div id="navsize">
+            <a href="../index.html"><img src="./images/zomatobusinesslogo.png" alt=""></a>
+        </div>
+    </div>
     <div id="creatersinfo">
         <div id="creatersinfo-left">
             <div id="creatersinfo-left-1">
@@ -44,30 +48,37 @@
                 <h3>Restaurant details</h3>
                 <p>Name, address and location</p>
                 <div id="cpinputbox">
-                <input type="text" id="restaurantname" placeholder="Restaurant Name">
-                <input type="text" id="restoaddress" placeholder="Restaurant Complete Address">
+                <input type="text" id="restaurantname" placeholder="Restaurant Name" value="Oreo Cafe">
+                <input type="text" id="restoaddress" placeholder="Restaurant Complete Address" value="Kothrud, Depot">
                 </div>
             </div>
             <div id="cprestaurantdetails">
                 <h3>Contact number at restaurant</h3>
                 <p>Your customers will call on this number for general enquiries</p>
                 <div id="cpinputbox">
-                    <input type="text" id="restaurantname" placeholder="Mobile Number at Restaurant">
-                    <input type="text" id="restoaddress" placeholder="Landline Number at Restaurant">
+                    <input type="text" id="restaurantmob" placeholder="Mobile Number at Restaurant" value="888888888">
+                    <input type="text" id="restaurnatlandline" placeholder="Landline Number at Restaurant" value="888888888">
                     </div>
+            </div>
+            <div id="cprestaurantdetails">
+                <h3>Restaurant Images</h3>
+                <div id="cpinputbox">
+                    <input type="text" id="restaurantImageUrl" placeholder="Enter Your Image Url" value="https://b.zmtcdn.com/data/pictures/2/20283342/b878c45deb13615bc5e9d818e5180990_featured_v2.jpg">
+                </div>
             </div>
             <div id="cprestaurantdetails">
                 <h3>Restaurant owner details</h3>
                 <p>These will be used to share revenue related communications</p>
                 <div id="cpinputbox">
-                    <input type="text" id="restaurantname" placeholder="Owner Mobile Number">
-                    <input type="text" id="restoaddress" placeholder="Landline Number at Restaurant">
+                    <input type="text" id="restaurantownerfullname" placeholder="Owner Full Name" value="Rajat Sinha">
+                    <input type="text" id="restaurantowneremail" placeholder="Owner Email" value="rj@gmail.com">
+                    <input type="text" id="restaurantownermob" placeholder="Owner Mobile Number" value="888888888">
                     </div>
             </div>
-            <button class="nextbluebutton">Next</button>
+            <button class="nextbluebutton">Register Restaurant</button>
         </div>
     </div>
-    <div id="popUpCart">
+    <!-- <div id="popUpCart">
 
 		<div id="cartDivIframe">
 			<i id="closeCartModal" class="fa-solid fa-xmark"></i>
@@ -80,7 +91,7 @@
 		<i class="fa-solid fa-cart-shopping"></i>
 		<span id="badgeNumber" > 0
 		</span>
-	</div>
+	</div> -->
 	
 
 
