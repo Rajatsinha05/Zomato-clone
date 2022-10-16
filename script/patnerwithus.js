@@ -33,6 +33,16 @@ h.addEventListener("keypress", async function(event){
 
 function claimnowfn(){
     alert("This restaurant is already claimed by our another user");
+    let alert = document.getElementById("alert");
+    alert.style.color="white";
+    alert.style.backgroundColor="rgb(224, 53, 70)";
+    alert.style.border="1px solid rgb(224, 53, 70)";
+    alert.innerHTML=`Already Claimed by our Another User <i class="fa-solid fa-xmark"></i>`;
+    alert.style.display="block";
+    setTimeout(() => {
+        alert.style.display="none";
+        
+    }, 1500);
 }
 function registerfn(){
     location.href="./createarestaurantpage.html";
