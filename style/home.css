@@ -877,7 +877,7 @@ element.style {
 	animation-duration: 800ms;
 	animation-timing-function: linear;
 	display: none;
-	z-index: 100;
+	z-index: 1000;
 }
 
 @keyframes alert {
