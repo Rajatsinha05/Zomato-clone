@@ -1,14 +1,14 @@
-                                                         Zomato-clone 
+                                        Zomato-clone 
 <br>
  <img src="https://blog.ipleaders.in/wp-content/uploads/2021/08/zomato-infinity-dining-916x516-1.jpg" alt="">
 
 Zomato is a fastest growing restaurant discovery website, established in 2008 by Deepinder Goyal and Pankaj Chaddah. Initially, it was named as Foodiebay but in 2010, it was renamed as Zomato. It provides not only information related to nearby restaurants but also provides facilities such as online ordering, table reservations and management. Zomato currently serves in 10,000 cities across 36 countries having 1.2 million popular restaurants with 80 million foodies every month. It is available in 10 different languages and has 10 million reviews with 18 million bookmarks. It gives a platform to the restaurants owners to serves a large number of users a good quality of food.
 
-                                                                Project_Objective:
+                                           Project_Objective:
 
 Our objective is to replicate the original site with all the functionalities and design elements. We aim to create the best clone of the website using the skills we have learnt through Masai School. <br>
 
-                                                                Tech Stack Used
+                                            Tech Stack Used
 
 To clone the site we haven’t used any fancy UI library, instead of that, we stick to the fundamental things of web development as mentioned below.
 
@@ -20,7 +20,7 @@ To clone the site we haven’t used any fancy UI library, instead of that, we st
 6. localStorage
    <br>
 
-                                                              Functionality:
+                                             Functionality:
 
 🔘Landing page <br>
     &nbsp;&nbsp;&nbsp;<span> Created by <a href = "https://github.com/karthikreddy552" > Karthik reddy </a> </span><br>
@@ -40,7 +40,10 @@ To clone the site we haven’t used any fancy UI library, instead of that, we st
 🔘 Checkout page calculates the shipping prices dynamically and the Payment page with many payment options.<br>
 &nbsp;&nbsp;Created by <a href = "https://github.com/karthikreddy552" > Karthik reddy </a> </span><br><hr>
 
-                                                     pages overview
+                                            pages overview
+                                            
+                                            
+<br>
 
            🔘 Landing page 
 
