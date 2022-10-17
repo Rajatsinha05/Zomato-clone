@@ -1081,6 +1081,7 @@ body::-webkit-scrollbar-thumb {
     margin: auto;
     margin-left: 50px;
 	display: flex;
+    align-items: center;
     border: 1px solid black;
 }
 
@@ -1215,6 +1216,7 @@ path {
     font-size: larger;
     
 }
+
 
 
 @media screen and (max-width:768px) {
