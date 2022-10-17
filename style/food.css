@@ -301,7 +301,7 @@ body::-webkit-scrollbar-thumb {
 	background-color: rgb(36, 150, 63);
 	color: white;
 	font-weight: 600;
-	padding: 5% 10%;
+	padding: 5% 5%;
 	width: fit-content;
 	justify-self: right;
 	border-radius: 15%;
