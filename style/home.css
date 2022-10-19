@@ -117,9 +117,12 @@ header {
     align-items: center;
     margin-left: 10px;
     height: 40px;
-    border-right: 2px solid pink;
+    
     padding-right: 4px;
     position: relative;
+}
+.search_item:first-child{
+    border-right: 2px solid pink;
 }
 
 .search .search_item p {
