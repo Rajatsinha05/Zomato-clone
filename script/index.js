@@ -250,7 +250,7 @@ const searchFoodSection =(e)=>{
     if(e.key=="Enter"){
         let value = document.getElementById("search1").value;
         localStorage.setItem("foodItem",value);
-        const url =`https://zomatoclone-api.herokuapp.com/restaurant?`;
+        const url =`https://easy-ruby-colt-boot.cyclic.app/restaurant?`;
         
         // fetchDataSupport(url+`q=${value}&_page=1&_limit=20`);
         window.location.href="./pages/food.html";
@@ -344,7 +344,7 @@ document.getElementById("search1").addEventListener("keypress",searchFoodSection
       password : document.getElementById("signUpPassword").value
     };
     try {
-      let res = await fetch("https://zomatoclone-api.herokuapp.com/user", {
+      let res = await fetch("https://easy-ruby-colt-boot.cyclic.app/user", {
         method: "POST",
         body: JSON.stringify(obj),
         headers: {
@@ -397,7 +397,7 @@ document.getElementById("search1").addEventListener("keypress",searchFoodSection
     }
     
     try{
-        const res = await fetch("https://zomatoclone-api.herokuapp.com/user");
+        const res = await fetch("https://easy-ruby-colt-boot.cyclic.app/user");
         let profileData = await res.json();
         // console.log(1);
         // console.log(profileData);

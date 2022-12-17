@@ -16,7 +16,7 @@ document.querySelector(".nextbluebutton").addEventListener('click', async()=>{
         price: "3,000",
     }
     console.log(resData);
-    let res=await fetch(`https://zomatoclone-api.herokuapp.com/restaurant`,{
+    let res=await fetch(`https://easy-ruby-colt-boot.cyclic.app/restaurant`,{
         method:"POST",
         body : JSON.stringify(resData),
         headers : {

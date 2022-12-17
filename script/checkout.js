@@ -366,7 +366,7 @@ var obj = {
   password : document.getElementById("signUpPassword").value
 };
 try {
-  let res = await fetch("https://zomatoclone-api.herokuapp.com/user", {
+  let res = await fetch("https://easy-ruby-colt-boot.cyclic.app/user", {
     method: "POST",
     body: JSON.stringify(obj),
     headers: {
@@ -419,7 +419,7 @@ if(obj.loginEmail == "" && obj.loginPassword == ""){
 }
 
 try{
-    const res = await fetch("https://zomatoclone-api.herokuapp.com/user");
+    const res = await fetch("https://easy-ruby-colt-boot.cyclic.app/user");
     let profileData = await res.json();
     // console.log(1);
     // console.log(profileData);

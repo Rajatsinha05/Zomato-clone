@@ -4,7 +4,7 @@ h.addEventListener("keypress", async function(event){
         event.preventDefault();
         var query=h.value;
         console.log(query);
-        let res = await fetch(`https://zomatoclone-api.herokuapp.com/restaurant`);
+        let res = await fetch(`https://easy-ruby-colt-boot.cyclic.app/restaurant`);
         let data = await res.json();
         console.log(data);
         let b=false;
